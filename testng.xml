@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+
+
+<suite-files>
+<suite-file path="./Suite_A.xml"/>
+<suite-file path="./Suite_B.xml"/>
+<suite-file path="./Suite_C.xml"/>
+
+</suite-files>
+
+
+</suite>

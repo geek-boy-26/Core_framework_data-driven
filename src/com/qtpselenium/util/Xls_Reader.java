@@ -1,6 +1,7 @@
 package com.qtpselenium.util;
 
 
+
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.usermodel.HSSFHyperlink;
@@ -25,8 +26,6 @@ public class Xls_Reader {
 	private XSSFSheet sheet = null;
 	private XSSFRow row   =null;
 	private XSSFCell cell = null;
-	
-
 	
 	public Xls_Reader(String path) {
 		
@@ -147,7 +146,7 @@ public class Xls_Reader {
 	  else if(cell.getCellType()==Cell.CELL_TYPE_NUMERIC || cell.getCellType()==Cell.CELL_TYPE_FORMULA ){
 		  
 		  String cellText  = String.valueOf(cell.getNumericCellValue());
-		 /* if (HSSFDateUtil.isCellDateFormatted(cell)) {
+		  if (HSSFDateUtil.isCellDateFormatted(cell)) {
 	           // format in form of M/D/YY
 			  double d = cell.getNumericCellValue();
 
@@ -163,7 +162,7 @@ public class Xls_Reader {
 
 	         }
 
-		  */
+		  
 		  
 		  return cellText;
 	  }else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
@@ -215,9 +214,9 @@ public class Xls_Reader {
 	        cell = row.createCell(colNum);
 
 	    // cell style
-	    CellStyle cs = workbook.createCellStyle();
-	    cs.setWrapText(true);
-	    cell.setCellStyle(cs);
+	    //CellStyle cs = workbook.createCellStyle();
+	    //cs.setWrapText(true);
+	    //cell.setCellStyle(cs);
 	    cell.setCellValue(data);
 
 	    fileOut = new FileOutputStream(path);
