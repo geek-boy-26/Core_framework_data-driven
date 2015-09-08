@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite B]">
+  <test name="Test B2(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteB.TestCase_B1">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.TestCase_B1 -->
+      <class name="com.qtpselenium.suiteB.TestCase_B2">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestSkip"/>
+          <include name="testCaseB2"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.TestCase_B2 -->
+    </classes>
+  </test> <!-- Test B2(failed) -->
+</suite> <!-- Failed suite [Suite B] -->

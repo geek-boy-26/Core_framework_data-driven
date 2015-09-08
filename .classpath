@@ -10,7 +10,6 @@
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/poi-ooxml-3.11-20141221.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/poi-ooxml-schemas-3.11-20141221.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/poi-scratchpad-3.11-20141221.jar"/>
-	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/testng-xslt-maven-plugin-test-0.0.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

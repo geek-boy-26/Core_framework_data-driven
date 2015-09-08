@@ -1,1 +1,35 @@
-04/09/2015 09:11:56 devpinoyLogger True
+08/09/2015 10:36:45 devpinoyLogger Loading property files
+08/09/2015 10:36:45 devpinoyLogger Loader property file succesfully
+08/09/2015 10:36:45 devpinoyLogger Loading Xls files
+08/09/2015 10:36:46 devpinoyLogger Loaded Xls files
+08/09/2015 10:36:46 devpinoyLogger Checking Run mode of Suite A
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_A1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_A1_1--Dummy Data_A1_2---Dummy Data_A1_3--Dummy Data_A1_4
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_A1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_A1_5--Dummy Data_A1_6---Dummy Data_A1_7--Dummy Data_A1_8
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_A1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_A1_9--Dummy Data_A1_10---Dummy Data_A1_11--Dummy Data_A1_12
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_A1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_A1_13--Dummy Data_A1_14---Dummy Data_A1_15--Dummy Data_A1_16
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_A2
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_A2_1--Dummy Data_A2_2---Dummy Data_A2_3
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_A2
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_A2_4--Dummy Data_A2_5---Dummy Data_A2_6
+08/09/2015 10:36:46 devpinoyLogger Checking Run mode of Suite B
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_B1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_B1_1--Dummy Data_B1_2---Dummy Data_B1_3--Dummy Data_B1_4
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_B1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_B1_5--Dummy Data_B1_6---Dummy Data_B1_7--Dummy Data_B1_8
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_B1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_B1_9--Dummy Data_B1_10---Dummy Data_B1_11--Dummy Data_B1_12
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_B1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_B1_13--Dummy Data_B1_14---Dummy Data_B1_15--Dummy Data_B1_16
+08/09/2015 10:36:46 devpinoyLogger Checking Run mode of Suite C
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_C1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_C1_1--Dummy Data_C1_2---Dummy Data_C1_3--Dummy Data_C1_4
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_C1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_C1_5--Dummy Data_C1_6---Dummy Data_C1_7--Dummy Data_C1_8
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_C1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_C1_9--Dummy Data_C1_10---Dummy Data_C1_11--Dummy Data_C1_12
+08/09/2015 10:36:46 devpinoyLogger Executing TestCase_C1
+08/09/2015 10:36:46 devpinoyLogger Dummy Data_C1_13--Dummy Data_C1_14---Dummy Data_C1_15--Dummy Data_C1_16

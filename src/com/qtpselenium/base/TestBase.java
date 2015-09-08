@@ -19,12 +19,14 @@ public static Xls_Reader suiteXls=null;
 public static Xls_Reader suiteAXls=null;
 public static Xls_Reader suiteBXls=null;
 public static Xls_Reader suiteCXls=null;
-
+public static boolean isInitalized=false;
 
 	//initializing the tests like logs, conifg, excel file..
 	public void initialize() throws IOException
 	{
 	//initialize logs
+		if(!isInitalized)
+	{		
 	APP_LOGS = Logger.getLogger("devpinoyLogger");
 	//config file 
 	APP_LOGS.debug("Loading property files");
@@ -45,6 +47,8 @@ public static Xls_Reader suiteCXls=null;
 	suiteXls = new Xls_Reader(System.getProperty("user.dir")+"//src//com//qtpselenium//xls//TestSuite.xlsx");
 	
 	APP_LOGS.debug("Loaded Xls files");
-	
+	isInitalized=true;
+		
 	}
+}
 }
