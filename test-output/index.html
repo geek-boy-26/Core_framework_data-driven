@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">4 suites</span>
+      <span class="top-banner-font-1">4 suites, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite_B">
-              <span class="suite-name border-passed">Suite B</span>
+              <span class="suite-name border-skipped">Suite B</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods,  1 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite_B" class="hide-methods skipped suite-Suite_B"> (hide)</a> <!-- hide-methods skipped suite-Suite_B -->
+                      <a href="#" panel-name="suite-Suite_B" class="show-methods skipped suite-Suite_B"> (show)</a> <!-- show-methods skipped suite-Suite_B -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite_B">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_B" title="com.qtpselenium.suiteB.TestCase_B1" hash-for-method="testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)">testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite_B -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_B" title="com.qtpselenium.suiteB.TestCase_B1" hash-for-method="testCaseB1(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16)">testCaseB1(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_B" title="com.qtpselenium.suiteB.TestCase_B1" hash-for-method="testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)">testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,7 +145,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite_C">
-              <span class="suite-name border-passed">Suite C</span>
+              <span class="suite-name border-skipped">Suite C</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -189,7 +198,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods,  2 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite_C" class="hide-methods skipped suite-Suite_C"> (hide)</a> <!-- hide-methods skipped suite-Suite_C -->
+                      <a href="#" panel-name="suite-Suite_C" class="show-methods skipped suite-Suite_C"> (show)</a> <!-- show-methods skipped suite-Suite_C -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite_C">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.qtpselenium.suiteC.TestCase_C1" hash-for-method="testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)">testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.qtpselenium.suiteC.TestCase_C1" hash-for-method="testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)">testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite_C -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -200,22 +228,12 @@
                     <div class="method-list-content passed suite-Suite_C">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.qtpselenium.suiteC.TestCase_C1" hash-for-method="testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)">testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.qtpselenium.suiteC.TestCase_C1" hash-for-method="testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)">testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.qtpselenium.suiteC.TestCase_C1" hash-for-method="testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)">testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.qtpselenium.suiteC.TestCase_C1" hash-for-method="testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)">testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.qtpselenium.suiteC.TestCase_C1" hash-for-method="testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)">testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -235,7 +253,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite_A">
-              <span class="suite-name border-passed">Suite A</span>
+              <span class="suite-name border-failed">Suite A</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -288,7 +306,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite_A" class="hide-methods failed suite-Suite_A"> (hide)</a> <!-- hide-methods failed suite-Suite_A -->
+                      <a href="#" panel-name="suite-Suite_A" class="show-methods failed suite-Suite_A"> (show)</a> <!-- show-methods failed suite-Suite_A -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite_A">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)">testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)">testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)">testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite_A -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite_A" class="hide-methods skipped suite-Suite_A"> (hide)</a> <!-- hide-methods skipped suite-Suite_A -->
+                      <a href="#" panel-name="suite-Suite_A" class="show-methods skipped suite-Suite_A"> (show)</a> <!-- show-methods skipped suite-Suite_A -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite_A">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)">testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A2" hash-for-method="testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)">testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite_A -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -297,31 +358,6 @@
                       <a href="#" panel-name="suite-Suite_A" class="show-methods passed suite-Suite_A"> (show)</a> <!-- show-methods passed suite-Suite_A -->
                     </span>
                     <div class="method-list-content passed suite-Suite_A">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)">testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)">testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)">testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A1" hash-for-method="testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)">testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A2" hash-for-method="testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)">testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="com.qtpselenium.suiteA.TestCase_A2" hash-for-method="testCaseA2(Dummy Data_A2_1, Dummy Data_A2_2, Dummy Data_A2_3)">testCaseA2(Dummy Data_A2_1, Dummy Data_A2_2, Dummy Data_A2_3)</a> <!-- method navigator-link -->
@@ -339,6 +375,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite_B" class="panel Suite_B">
+          <div class="suite-Suite_B-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.suiteB.TestCase_B1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)">
+                  </a> <!-- testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8) -->
+                  <span class="method-name">testCaseB1</span>
+                  <span class="parameters">(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode for test set data set to NO1
+	at com.qtpselenium.suiteB.TestCase_B1.testCaseB1(TestCase_B1.java:35)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_B-class-skipped -->
+          <div class="suite-Suite_B-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.suiteB.TestCase_B2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseB2">
+                  </a> <!-- testCaseB2 -->
+                  <span class="method-name">testCaseB2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_B-class-passed -->
           <div class="suite-Suite_B-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -351,14 +422,6 @@
                   </a> <!-- testCaseB1(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16) -->
                   <span class="method-name">testCaseB1</span>
                   <span class="parameters">(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)">
-                  </a> <!-- testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8) -->
-                  <span class="method-name">testCaseB1</span>
-                  <span class="parameters">(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -379,63 +442,40 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite_B-class-passed -->
-          <div class="suite-Suite_B-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qtpselenium.suiteB.TestCase_B2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCaseB2">
-                  </a> <!-- testCaseB2 -->
-                  <span class="method-name">testCaseB2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_B-class-passed -->
         </div> <!-- panel Suite_B -->
         <div panel-name="suite-Suite_C" class="panel Suite_C">
-          <div class="suite-Suite_C-class-passed">
+          <div class="suite-Suite_C-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.qtpselenium.suiteC.TestCase_C1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)">
-                  </a> <!-- testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8) -->
-                  <span class="method-name">testCaseC1</span>
-                  <span class="parameters">(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)">
-                  </a> <!-- testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16) -->
-                  <span class="method-name">testCaseC1</span>
-                  <span class="parameters">(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)">
-                  </a> <!-- testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12) -->
-                  <span class="method-name">testCaseC1</span>
-                  <span class="parameters">(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)">
                   </a> <!-- testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4) -->
                   <span class="method-name">testCaseC1</span>
                   <span class="parameters">(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode for test set data set to NO0
+	at com.qtpselenium.suiteC.TestCase_C1.testCaseC1(TestCase_C1.java:33)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)">
+                  </a> <!-- testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8) -->
+                  <span class="method-name">testCaseC1</span>
+                  <span class="parameters">(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode for test set data set to NO1
+	at com.qtpselenium.suiteC.TestCase_C1.testCaseC1(TestCase_C1.java:33)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_C-class-passed -->
+          </div> <!-- suite-Suite_C-class-skipped -->
           <div class="suite-Suite_C-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -451,11 +491,35 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite_C-class-passed -->
-        </div> <!-- panel Suite_C -->
-        <div panel-name="suite-Suite_A" class="panel Suite_A">
-          <div class="suite-Suite_A-class-passed">
+          <div class="suite-Suite_C-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.suiteC.TestCase_C1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)">
+                  </a> <!-- testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12) -->
+                  <span class="method-name">testCaseC1</span>
+                  <span class="parameters">(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)">
+                  </a> <!-- testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16) -->
+                  <span class="method-name">testCaseC1</span>
+                  <span class="parameters">(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_C-class-passed -->
+        </div> <!-- panel Suite_C -->
+        <div panel-name="suite-Suite_A" class="panel Suite_A">
+          <div class="suite-Suite_A-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.qtpselenium.suiteA.TestCase_A1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -465,22 +529,10 @@
                   </a> <!-- testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16) -->
                   <span class="method-name">testCaseA1</span>
                   <span class="parameters">(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)">
-                  </a> <!-- testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4) -->
-                  <span class="method-name">testCaseA1</span>
-                  <span class="parameters">(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)">
-                  </a> <!-- testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12) -->
-                  <span class="method-name">testCaseA1</span>
-                  <span class="parameters">(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [XYZ456] but found [XYZ]
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:52)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -489,13 +541,49 @@
                   </a> <!-- testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8) -->
                   <span class="method-name">testCaseA1</span>
                   <span class="parameters">(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [XYZ456] but found [XYZ]
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:52)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)">
+                  </a> <!-- testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4) -->
+                  <span class="method-name">testCaseA1</span>
+                  <span class="parameters">(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [XYZ456] but found [XYZ]
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:52)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_A-class-passed -->
-          <div class="suite-Suite_A-class-passed">
+          </div> <!-- suite-Suite_A-class-failed -->
+          <div class="suite-Suite_A-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.suiteA.TestCase_A1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)">
+                  </a> <!-- testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12) -->
+                  <span class="method-name">testCaseA1</span>
+                  <span class="parameters">(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode for test set data set to NO2
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:40)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_A-class-skipped -->
+          <div class="suite-Suite_A-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.qtpselenium.suiteA.TestCase_A2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -505,8 +593,20 @@
                   </a> <!-- testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6) -->
                   <span class="method-name">testCaseA2</span>
                   <span class="parameters">(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode for test set data set to NO1
+	at com.qtpselenium.suiteA.TestCase_A2.testCaseA2(TestCase_A2.java:37)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_A-class-skipped -->
+          <div class="suite-Suite_A-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.suiteA.TestCase_A2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testCaseA2(Dummy Data_A2_1, Dummy Data_A2_2, Dummy Data_A2_3)">
@@ -709,9 +809,9 @@ data.setCell(0, 1, 'testCaseB1')
 data.setCell(0, 2, 'com.qtpselenium.suiteB.TestCase_B1')
 data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCaseB1')
-data.setCell(1, 2, 'com.qtpselenium.suiteB.TestCase_B1')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'testCaseB2')
+data.setCell(1, 2, 'com.qtpselenium.suiteB.TestCase_B2')
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCaseB1')
 data.setCell(2, 2, 'com.qtpselenium.suiteB.TestCase_B1')
@@ -721,14 +821,14 @@ data.setCell(3, 1, 'testCaseB1')
 data.setCell(3, 2, 'com.qtpselenium.suiteB.TestCase_B1')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCaseB2')
-data.setCell(4, 2, 'com.qtpselenium.suiteB.TestCase_B2')
+data.setCell(4, 1, 'testCaseB1')
+data.setCell(4, 2, 'com.qtpselenium.suiteB.TestCase_B1')
 data.setCell(4, 3, 0);
 window.suiteTableData['Suite_B']= { tableData: data, tableDiv: 'times-div-Suite_B'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 2 ms</span>
               <div id="times-div-Suite_B">
               </div> <!-- times-div-Suite_B -->
             </div> <!-- times-div -->
@@ -797,11 +897,11 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCaseA1')
 data.setCell(0, 2, 'com.qtpselenium.suiteA.TestCase_A1')
-data.setCell(0, 3, 3);
+data.setCell(0, 3, 4);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCaseA2')
-data.setCell(1, 2, 'com.qtpselenium.suiteA.TestCase_A2')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'testCaseA1')
+data.setCell(1, 2, 'com.qtpselenium.suiteA.TestCase_A1')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCaseA1')
 data.setCell(2, 2, 'com.qtpselenium.suiteA.TestCase_A1')
@@ -811,8 +911,8 @@ data.setCell(3, 1, 'testCaseA1')
 data.setCell(3, 2, 'com.qtpselenium.suiteA.TestCase_A1')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCaseA1')
-data.setCell(4, 2, 'com.qtpselenium.suiteA.TestCase_A1')
+data.setCell(4, 1, 'testCaseA2')
+data.setCell(4, 2, 'com.qtpselenium.suiteA.TestCase_A2')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testCaseA2')
@@ -924,120 +1024,126 @@ return data;
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">676 ms</span>
+                <span class="method-start">560 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</span>
-                <span class="method-start">688 ms</span>
+                <span class="method-start">569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)</span>
-                <span class="method-start">693 ms</span>
+                <span class="method-start">577 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">707 ms</span>
+                <span class="method-start">600 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_1, Dummy Data_A2_2, Dummy Data_A2_3)</span>
-                <span class="method-start">709 ms</span>
+                <span class="method-start">603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)</span>
-                <span class="method-start">710 ms</span>
+                <span class="method-start">604 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">718 ms</span>
+                <span class="method-start">611 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">719 ms</span>
+                <span class="method-start">612 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_1, Dummy Data_B1_2, Dummy Data_B1_3, Dummy Data_B1_4)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">616 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_9, Dummy Data_B1_10, Dummy Data_B1_11, Dummy Data_B1_12)</span>
-                <span class="method-start">723 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16)</span>
-                <span class="method-start">724 ms</span>
+                <span class="method-start">618 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">627 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB2</span>
-                <span class="method-start">733 ms</span>
+                <span class="method-start">628 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">740 ms</span>
+                <span class="method-start">635 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">741 ms</span>
+                <span class="method-start">636 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)</span>
-                <span class="method-start">744 ms</span>
+                <span class="method-start">640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</span>
-                <span class="method-start">745 ms</span>
+                <span class="method-start">641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">754 ms</span>
+                <span class="method-start">650 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC2</span>
-                <span class="method-start">755 ms</span>
+                <span class="method-start">651 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -1057,120 +1163,126 @@ return data;
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">676 ms</span>
+                <span class="method-start">560 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</span>
-                <span class="method-start">688 ms</span>
+                <span class="method-start">569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)</span>
-                <span class="method-start">693 ms</span>
+                <span class="method-start">577 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">707 ms</span>
+                <span class="method-start">600 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_1, Dummy Data_A2_2, Dummy Data_A2_3)</span>
-                <span class="method-start">709 ms</span>
+                <span class="method-start">603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)</span>
-                <span class="method-start">710 ms</span>
+                <span class="method-start">604 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">718 ms</span>
+                <span class="method-start">611 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">719 ms</span>
+                <span class="method-start">612 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_1, Dummy Data_B1_2, Dummy Data_B1_3, Dummy Data_B1_4)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">616 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_9, Dummy Data_B1_10, Dummy Data_B1_11, Dummy Data_B1_12)</span>
-                <span class="method-start">723 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16)</span>
-                <span class="method-start">724 ms</span>
+                <span class="method-start">618 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">627 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB2</span>
-                <span class="method-start">733 ms</span>
+                <span class="method-start">628 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">740 ms</span>
+                <span class="method-start">635 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">741 ms</span>
+                <span class="method-start">636 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)</span>
-                <span class="method-start">744 ms</span>
+                <span class="method-start">640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</span>
-                <span class="method-start">745 ms</span>
+                <span class="method-start">641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">754 ms</span>
+                <span class="method-start">650 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC2</span>
-                <span class="method-start">755 ms</span>
+                <span class="method-start">651 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -1190,120 +1302,126 @@ return data;
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">676 ms</span>
+                <span class="method-start">560 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</span>
-                <span class="method-start">688 ms</span>
+                <span class="method-start">569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)</span>
-                <span class="method-start">693 ms</span>
+                <span class="method-start">577 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">707 ms</span>
+                <span class="method-start">600 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_1, Dummy Data_A2_2, Dummy Data_A2_3)</span>
-                <span class="method-start">709 ms</span>
+                <span class="method-start">603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)</span>
-                <span class="method-start">710 ms</span>
+                <span class="method-start">604 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">718 ms</span>
+                <span class="method-start">611 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">719 ms</span>
+                <span class="method-start">612 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_1, Dummy Data_B1_2, Dummy Data_B1_3, Dummy Data_B1_4)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">616 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_9, Dummy Data_B1_10, Dummy Data_B1_11, Dummy Data_B1_12)</span>
-                <span class="method-start">723 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16)</span>
-                <span class="method-start">724 ms</span>
+                <span class="method-start">618 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">627 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB2</span>
-                <span class="method-start">733 ms</span>
+                <span class="method-start">628 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">740 ms</span>
+                <span class="method-start">635 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">741 ms</span>
+                <span class="method-start">636 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)</span>
-                <span class="method-start">744 ms</span>
+                <span class="method-start">640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</span>
-                <span class="method-start">745 ms</span>
+                <span class="method-start">641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">754 ms</span>
+                <span class="method-start">650 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC2</span>
-                <span class="method-start">755 ms</span>
+                <span class="method-start">651 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -1323,120 +1441,126 @@ return data;
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">676 ms</span>
+                <span class="method-start">560 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_1, Dummy Data_A1_2, Dummy Data_A1_3, Dummy Data_A1_4)</span>
-                <span class="method-start">688 ms</span>
+                <span class="method-start">569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_5, Dummy Data_A1_6, Dummy Data_A1_7, Dummy Data_A1_8)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA1(Dummy Data_A1_9, Dummy Data_A1_10, Dummy Data_A1_11, Dummy Data_A1_12)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-start">576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCaseA1(Dummy Data_A1_13, Dummy Data_A1_14, Dummy Data_A1_15, Dummy Data_A1_16)</span>
-                <span class="method-start">693 ms</span>
+                <span class="method-start">577 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteA.TestCase_A2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">707 ms</span>
+                <span class="method-start">600 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_1, Dummy Data_A2_2, Dummy Data_A2_3)</span>
-                <span class="method-start">709 ms</span>
+                <span class="method-start">603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseA2(Dummy Data_A2_4, Dummy Data_A2_5, Dummy Data_A2_6)</span>
-                <span class="method-start">710 ms</span>
+                <span class="method-start">604 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">718 ms</span>
+                <span class="method-start">611 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">719 ms</span>
+                <span class="method-start">612 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_1, Dummy Data_B1_2, Dummy Data_B1_3, Dummy Data_B1_4)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">616 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_5, Dummy Data_B1_6, Dummy Data_B1_7, Dummy Data_B1_8)</span>
-                <span class="method-start">722 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_9, Dummy Data_B1_10, Dummy Data_B1_11, Dummy Data_B1_12)</span>
-                <span class="method-start">723 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseB1(Dummy Data_B1_13, Dummy Data_B1_14, Dummy Data_B1_15, Dummy Data_B1_16)</span>
-                <span class="method-start">724 ms</span>
+                <span class="method-start">618 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteB.TestCase_B2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">627 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseB2</span>
-                <span class="method-start">733 ms</span>
+                <span class="method-start">628 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
-                <span class="method-start">740 ms</span>
+                <span class="method-start">635 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">741 ms</span>
+                <span class="method-start">636 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_1, Dummy Data_C1_2, Dummy Data_C1_3, Dummy Data_C1_4)</span>
-                <span class="method-start">744 ms</span>
+                <span class="method-start">640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_5, Dummy Data_C1_6, Dummy Data_C1_7, Dummy Data_C1_8)</span>
-                <span class="method-start">745 ms</span>
+                <span class="method-start">641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_9, Dummy Data_C1_10, Dummy Data_C1_11, Dummy Data_C1_12)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCaseC1(Dummy Data_C1_13, Dummy Data_C1_14, Dummy Data_C1_15, Dummy Data_C1_16)</span>
-                <span class="method-start">746 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qtpselenium.suiteC.TestCase_C2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">754 ms</span>
+                <span class="method-start">650 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCaseC2</span>
-                <span class="method-start">755 ms</span>
+                <span class="method-start">651 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

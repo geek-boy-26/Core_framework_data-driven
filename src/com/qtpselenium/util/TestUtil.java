@@ -94,6 +94,29 @@ public class TestUtil
 			
 			xls.setCellData(testCaseName, "Results", rowNum, result);
 		}
+		
+		
+		//Check runmode for dataset
+		public static String[] getDataSetRunmodes(Xls_Reader xlsFile,String sheetName){
+			String[] runmodes=null;
+			if(!xlsFile.isSheetExist(sheetName)){
+				xlsFile=null;
+				sheetName=null;
+				runmodes = new String[1];
+				runmodes[0]="Y";
+				xlsFile=null;
+				sheetName=null;
+				return runmodes;
+			}
+			runmodes = new String[xlsFile.getRowCount(sheetName)-1];
+			for(int i=2;i<=runmodes.length+1;i++){
+				runmodes[i-2]=xlsFile.getCellData(sheetName, "Runmode", i);
+			}
+			xlsFile=null;
+			sheetName=null;
+			return runmodes;
+			
+		}
 	
 	
 }

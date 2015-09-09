@@ -1,43 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="16" passed="16">
+<testng-results skipped="5" failed="3" total="16" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite B" duration-ms="14" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+  <suite name="Suite B" duration-ms="17" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
     <groups>
     </groups>
-    <test name="Test B1" duration-ms="6" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+    <test name="Test B1" duration-ms="6" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
       <class name="com.qtpselenium.suiteB.TestCase_B1">
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7c24d892]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7a08c0a3]" name="checkTestSkip" is-config="true" duration-ms="2" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="PASS" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7c24d892]" name="testCaseB1" duration-ms="1" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dummy Data_B1_5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Dummy Data_B1_6]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Dummy Data_B1_7]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Dummy Data_B1_8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseB1 -->
-        <test-method status="PASS" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7c24d892]" name="testCaseB1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7a08c0a3]" name="testCaseB1" duration-ms="0" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +37,68 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseB1 -->
-        <test-method status="PASS" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7c24d892]" name="testCaseB1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7a08c0a3]" name="testCaseB1" duration-ms="0" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dummy Data_B1_5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dummy Data_B1_6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy Data_B1_7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy Data_B1_8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode for test set data set to NO1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO1
+	at com.qtpselenium.suiteB.TestCase_B1.testCaseB1(TestCase_B1.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseB1 -->
+        <test-method status="PASS" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7a08c0a3]" name="testCaseB1" duration-ms="1" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +124,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseB1 -->
-        <test-method status="PASS" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7c24d892]" name="testCaseB1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@7a08c0a3]" name="testCaseB1" duration-ms="0" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -117,33 +152,33 @@
         </test-method> <!-- testCaseB1 -->
       </class> <!-- com.qtpselenium.suiteB.TestCase_B1 -->
     </test> <!-- Test B1 -->
-    <test name="Test B2" duration-ms="2" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+    <test name="Test B2" duration-ms="2" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
       <class name="com.qtpselenium.suiteB.TestCase_B2">
-        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@34521982]" name="checkSuiteSkip" is-config="true" duration-ms="0" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@7b4712c3]" name="checkSuiteSkip" is-config="true" duration-ms="1" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteSkip -->
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@34521982]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@7b4712c3]" name="checkTestSkip" is-config="true" duration-ms="1" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="PASS" signature="testCaseB2()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@34521982]" name="testCaseB2" duration-ms="0" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="testCaseB2()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@7b4712c3]" name="testCaseB2" duration-ms="1" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseB2 -->
       </class> <!-- com.qtpselenium.suiteB.TestCase_B2 -->
     </test> <!-- Test B2 -->
   </suite> <!-- Suite B -->
-  <suite name="Suite C" duration-ms="14" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+  <suite name="Suite C" duration-ms="15" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
     <groups>
     </groups>
-    <test name="Test C1" duration-ms="6" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+    <test name="Test C1" duration-ms="7" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
       <class name="com.qtpselenium.suiteC.TestCase_C1">
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@4a1c1b57]" name="checkTestSkip" is-config="true" duration-ms="1" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@74e2ad16]" name="checkTestSkip" is-config="true" duration-ms="2" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="PASS" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@4a1c1b57]" name="testCaseC1" duration-ms="1" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@74e2ad16]" name="testCaseC1" duration-ms="1" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -166,10 +201,45 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode for test set data set to NO0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO0
+	at com.qtpselenium.suiteC.TestCase_C1.testCaseC1(TestCase_C1.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseC1 -->
-        <test-method status="PASS" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@4a1c1b57]" name="testCaseC1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@74e2ad16]" name="testCaseC1" duration-ms="0" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -192,36 +262,45 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode for test set data set to NO1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO1
+	at com.qtpselenium.suiteC.TestCase_C1.testCaseC1(TestCase_C1.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseC1 -->
-        <test-method status="PASS" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@4a1c1b57]" name="testCaseC1" duration-ms="1" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dummy Data_C1_13]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Dummy Data_C1_14]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Dummy Data_C1_15]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Dummy Data_C1_16]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseC1 -->
-        <test-method status="PASS" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@4a1c1b57]" name="testCaseC1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@74e2ad16]" name="testCaseC1" duration-ms="0" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -247,35 +326,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseC1 -->
+        <test-method status="PASS" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@74e2ad16]" name="testCaseC1" duration-ms="1" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dummy Data_C1_13]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dummy Data_C1_14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy Data_C1_15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy Data_C1_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseC1 -->
       </class> <!-- com.qtpselenium.suiteC.TestCase_C1 -->
     </test> <!-- Test C1 -->
-    <test name="Test C2" duration-ms="1" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+    <test name="Test C2" duration-ms="1" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
       <class name="com.qtpselenium.suiteC.TestCase_C2">
-        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@6e4ccfdc]" name="checkSuiteSkip" is-config="true" duration-ms="1" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@3462b48a]" name="checkSuiteSkip" is-config="true" duration-ms="1" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteSkip -->
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@6e4ccfdc]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@3462b48a]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="PASS" signature="testCaseC2()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@6e4ccfdc]" name="testCaseC2" duration-ms="0" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="testCaseC2()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@3462b48a]" name="testCaseC2" duration-ms="0" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseC2 -->
       </class> <!-- com.qtpselenium.suiteC.TestCase_C2 -->
     </test> <!-- Test C2 -->
   </suite> <!-- Suite C -->
-  <suite name="Suite A" duration-ms="36" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+  <suite name="Suite A" duration-ms="45" started-at="2015-09-09T09:24:22Z" finished-at="2015-09-09T09:24:23Z">
     <groups>
     </groups>
-    <test name="Test A1" duration-ms="19" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+    <test name="Test A1" duration-ms="20" started-at="2015-09-09T09:24:22Z" finished-at="2015-09-09T09:24:22Z">
       <class name="com.qtpselenium.suiteA.TestCase_A1">
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@5a4a6010]" name="checkTestSkip" is-config="true" duration-ms="2" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@2083fc73]" name="checkTestSkip" is-config="true" duration-ms="3" started-at="2015-09-09T05:24:22Z" finished-at="2015-09-09T05:24:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="PASS" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@5a4a6010]" name="testCaseA1" duration-ms="3" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="FAIL" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@2083fc73]" name="testCaseA1" duration-ms="4" started-at="2015-09-09T05:24:22Z" data-provider="getTestData" finished-at="2015-09-09T05:24:22Z">
           <params>
             <param index="0">
               <value>
@@ -298,10 +403,50 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [XYZ456] but found [XYZ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [XYZ456] but found [XYZ]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseA1 -->
-        <test-method status="PASS" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@5a4a6010]" name="testCaseA1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="FAIL" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@2083fc73]" name="testCaseA1" duration-ms="0" started-at="2015-09-09T05:24:22Z" data-provider="getTestData" finished-at="2015-09-09T05:24:22Z">
           <params>
             <param index="0">
               <value>
@@ -324,10 +469,50 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [XYZ456] but found [XYZ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [XYZ456] but found [XYZ]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseA1 -->
-        <test-method status="PASS" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@5a4a6010]" name="testCaseA1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="SKIP" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@2083fc73]" name="testCaseA1" duration-ms="0" started-at="2015-09-09T05:24:22Z" data-provider="getTestData" finished-at="2015-09-09T05:24:22Z">
           <params>
             <param index="0">
               <value>
@@ -350,10 +535,45 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode for test set data set to NO2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO2
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseA1 -->
-        <test-method status="PASS" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@5a4a6010]" name="testCaseA1" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="FAIL" signature="testCaseA1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A1@2083fc73]" name="testCaseA1" duration-ms="0" started-at="2015-09-09T05:24:22Z" data-provider="getTestData" finished-at="2015-09-09T05:24:22Z">
           <params>
             <param index="0">
               <value>
@@ -376,22 +596,62 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [XYZ456] but found [XYZ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [XYZ456] but found [XYZ]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.qtpselenium.suiteA.TestCase_A1.testCaseA1(TestCase_A1.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseA1 -->
       </class> <!-- com.qtpselenium.suiteA.TestCase_A1 -->
     </test> <!-- Test A1 -->
-    <test name="Test A2" duration-ms="4" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+    <test name="Test A2" duration-ms="5" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
       <class name="com.qtpselenium.suiteA.TestCase_A2">
-        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@7175bfc4]" name="checkSuiteSkip" is-config="true" duration-ms="675" started-at="2015-09-08T10:36:45Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@570698ea]" name="checkSuiteSkip" is-config="true" duration-ms="559" started-at="2015-09-09T05:24:22Z" finished-at="2015-09-09T05:24:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteSkip -->
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@7175bfc4]" name="checkTestSkip" is-config="true" duration-ms="1" started-at="2015-09-08T10:36:46Z" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@570698ea]" name="checkTestSkip" is-config="true" duration-ms="1" started-at="2015-09-09T05:24:23Z" finished-at="2015-09-09T05:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="PASS" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@7175bfc4]" name="testCaseA2" duration-ms="1" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="PASS" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@570698ea]" name="testCaseA2" duration-ms="0" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -412,7 +672,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseA2 -->
-        <test-method status="PASS" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@7175bfc4]" name="testCaseA2" duration-ms="0" started-at="2015-09-08T10:36:46Z" data-provider="getTestData" finished-at="2015-09-08T10:36:46Z">
+        <test-method status="SKIP" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteA.TestCase_A2@570698ea]" name="testCaseA2" duration-ms="0" started-at="2015-09-09T05:24:23Z" data-provider="getTestData" finished-at="2015-09-09T05:24:23Z">
           <params>
             <param index="0">
               <value>
@@ -430,13 +690,48 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode for test set data set to NO1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO1
+	at com.qtpselenium.suiteA.TestCase_A2.testCaseA2(TestCase_A2.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseA2 -->
       </class> <!-- com.qtpselenium.suiteA.TestCase_A2 -->
     </test> <!-- Test A2 -->
   </suite> <!-- Suite A -->
-  <suite name="My Suite" duration-ms="0" started-at="2015-09-08T14:36:46Z" finished-at="2015-09-08T14:36:46Z">
+  <suite name="My Suite" duration-ms="0" started-at="2015-09-09T09:24:23Z" finished-at="2015-09-09T09:24:23Z">
     <groups>
     </groups>
   </suite> <!-- My Suite -->
