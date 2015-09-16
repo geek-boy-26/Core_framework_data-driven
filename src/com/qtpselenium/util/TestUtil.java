@@ -117,6 +117,22 @@ public class TestUtil
 			return runmodes;
 			
 		}
-	
-	
+		
+		
+		//return row number for a test
+		public static int getRowNum(Xls_Reader xlsFile, String id)
+		{
+			for(int i=2; i<= xlsFile.getRowCount("Test Cases") ; i++)
+			{
+				String tcid=xlsFile.getCellData("Test Cases", "TCID", i);
+				
+				if(tcid.equals(id))
+				{
+					xlsFile=null;
+					return i;
+				}
+				
+			}
+			return -1;
+		}
 }

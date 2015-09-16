@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="My Suite">
-
+<listeners>
+    <listener class-name="com.qtpselenium.listener.TestsListenerAdapter" />
+</listeners>
 
 <suite-files>
 <suite-file path="./Suite_A.xml"/>

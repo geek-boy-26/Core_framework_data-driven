@@ -1,25 +1,29 @@
-09/09/2015 05:24:22 devpinoyLogger Loading property files
-09/09/2015 05:24:22 devpinoyLogger Loader property file succesfully
-09/09/2015 05:24:22 devpinoyLogger Loading Xls files
-09/09/2015 05:24:22 devpinoyLogger Loaded Xls files
-09/09/2015 05:24:22 devpinoyLogger Checking Run mode of Suite A
-09/09/2015 05:24:22 devpinoyLogger Executing TestCase_A1
-09/09/2015 05:24:22 devpinoyLogger Dummy Data_A1_1--Dummy Data_A1_2---Dummy Data_A1_3--Dummy Data_A1_4
-09/09/2015 05:24:22 devpinoyLogger Executing TestCase_A1
-09/09/2015 05:24:22 devpinoyLogger Dummy Data_A1_5--Dummy Data_A1_6---Dummy Data_A1_7--Dummy Data_A1_8
-09/09/2015 05:24:22 devpinoyLogger Executing TestCase_A1
-09/09/2015 05:24:22 devpinoyLogger Dummy Data_A1_13--Dummy Data_A1_14---Dummy Data_A1_15--Dummy Data_A1_16
-09/09/2015 05:24:23 devpinoyLogger Executing TestCase_A2
-09/09/2015 05:24:23 devpinoyLogger Dummy Data_A2_1--Dummy Data_A2_2---Dummy Data_A2_3
-09/09/2015 05:24:23 devpinoyLogger Checking Run mode of Suite B
-09/09/2015 05:24:23 devpinoyLogger Executing TestCase_B1
-09/09/2015 05:24:23 devpinoyLogger Dummy Data_B1_1--Dummy Data_B1_2---Dummy Data_B1_3--Dummy Data_B1_4
-09/09/2015 05:24:23 devpinoyLogger Executing TestCase_B1
-09/09/2015 05:24:23 devpinoyLogger Dummy Data_B1_9--Dummy Data_B1_10---Dummy Data_B1_11--Dummy Data_B1_12
-09/09/2015 05:24:23 devpinoyLogger Executing TestCase_B1
-09/09/2015 05:24:23 devpinoyLogger Dummy Data_B1_13--Dummy Data_B1_14---Dummy Data_B1_15--Dummy Data_B1_16
-09/09/2015 05:24:23 devpinoyLogger Checking Run mode of Suite C
-09/09/2015 05:24:23 devpinoyLogger Executing TestCase_C1
-09/09/2015 05:24:23 devpinoyLogger Dummy Data_C1_9--Dummy Data_C1_10---Dummy Data_C1_11--Dummy Data_C1_12
-09/09/2015 05:24:23 devpinoyLogger Executing TestCase_C1
-09/09/2015 05:24:23 devpinoyLogger Dummy Data_C1_13--Dummy Data_C1_14---Dummy Data_C1_15--Dummy Data_C1_16
+16/09/2015 10:44:04 devpinoyLogger Loading property files
+16/09/2015 10:44:04 devpinoyLogger Loader property file succesfully
+16/09/2015 10:44:04 devpinoyLogger Loading Xls files
+16/09/2015 10:44:05 devpinoyLogger Loaded Xls files
+16/09/2015 10:44:05 devpinoyLogger Checking Run mode of Suite A
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_A1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_A1_1--Dummy Data_A1_2---Dummy Data_A1_3--Dummy Data_A1_4
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_A1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_A1_13--Dummy Data_A1_14---Dummy Data_A1_15--Dummy Data_A1_16
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_A2
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_A2_1--Dummy Data_A2_2---Dummy Data_A2_3
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_A2
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_A2_4--Dummy Data_A2_5---Dummy Data_A2_6
+16/09/2015 10:44:05 devpinoyLogger Checking Run mode of Suite B
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_B1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_B1_1--Dummy Data_B1_2---Dummy Data_B1_3--Dummy Data_B1_4
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_B1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_B1_5--Dummy Data_B1_6---Dummy Data_B1_7--Dummy Data_B1_8
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_B1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_B1_9--Dummy Data_B1_10---Dummy Data_B1_11--Dummy Data_B1_12
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_B1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_B1_13--Dummy Data_B1_14---Dummy Data_B1_15--Dummy Data_B1_16
+16/09/2015 10:44:05 devpinoyLogger Checking Run mode of Suite C
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_C1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_C1_5--Dummy Data_C1_6---Dummy Data_C1_7--Dummy Data_C1_8
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_C1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_C1_9--Dummy Data_C1_10---Dummy Data_C1_11--Dummy Data_C1_12
+16/09/2015 10:44:05 devpinoyLogger Executing TestCase_C1
+16/09/2015 10:44:05 devpinoyLogger Dummy Data_C1_13--Dummy Data_C1_14---Dummy Data_C1_15--Dummy Data_C1_16
