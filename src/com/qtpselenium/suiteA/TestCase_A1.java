@@ -56,7 +56,7 @@ public class TestCase_A1 extends TestSuiteBase
 		
 		//Selenium Code
 		String expected_title = "XYZ";
-		String actual_title = "XYZ123";
+		String actual_title = "XYZ";
 		System.out.println("before");
 		try{
 		Assert.assertEquals(expected_title, actual_title);

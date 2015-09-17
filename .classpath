@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_71"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/poi-3.11-20141221.jar"/>
@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/poi-ooxml-schemas-3.11-20141221.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/poi-scratchpad-3.11-20141221.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Aakar/Selenium/Core_framework/Jars/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

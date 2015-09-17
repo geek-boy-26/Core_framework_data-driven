@@ -11,7 +11,8 @@
     <property name="test.dest" value="${ws.home}/build"/>
     <property name="test.src" value="${ws.home}/src"/>
 	<property name="ng.result" value="test-output"/>
-    
+	<property name="build.sysclasspath" value="last"/>
+	
     <!--target name="start-selenium-server">
         <java jar="${ws.home}/lib/selenium-server.jar"/>
     </target-->
@@ -61,7 +62,7 @@
             debug="true" 
             destdir="${test.dest}" 
             srcdir="${test.src}" 
-            target="1.5" 
+            target="1.7" 
             classpath="${test.classpath}"
         >
         </javac>
