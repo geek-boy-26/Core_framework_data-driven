@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Suite">
+
+
+
+
+<test name="Checklogin">
+    <classes>
+        <class name="com.qtpselenium.Login_Suite.Checklogin" ></class>  
+    </classes>
+</test>
+
+<test name="Test A2">
+    <classes>
+        <class name="com.qtpselenium.Login_Suite.TestCase_A2" ></class>  
+    </classes>
+</test>
+
+
+</suite>
+

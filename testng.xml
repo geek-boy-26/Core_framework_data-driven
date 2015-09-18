@@ -5,7 +5,7 @@
 </listeners>
 
 <suite-files>
-<suite-file path="./Suite_A.xml"/>
+<suite-file path="./Login Suite.xml"/>
 <suite-file path="./Suite_B.xml"/>
 <suite-file path="./Suite_C.xml"/>
 

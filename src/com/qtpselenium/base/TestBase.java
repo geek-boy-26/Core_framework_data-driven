@@ -16,7 +16,7 @@ public static Logger APP_LOGS=null;
 public static Properties config=null;
 public static Properties OR=null;
 public static Xls_Reader suiteXls=null;
-public static Xls_Reader suiteAXls=null;
+public static Xls_Reader LoginSuiteXls=null;
 public static Xls_Reader suiteBXls=null;
 public static Xls_Reader suiteCXls=null;
 public static boolean isInitalized=false;
@@ -41,7 +41,7 @@ public static boolean isInitalized=false;
 
 	APP_LOGS.debug("Loading Xls files");
 	//xls file
-	suiteAXls = new Xls_Reader(System.getProperty("user.dir")+"//src//com//qtpselenium//xls//A suite.xlsx");
+	LoginSuiteXls = new Xls_Reader(System.getProperty("user.dir")+"//src//com//qtpselenium//xls//Login Suite.xlsx");
 	suiteBXls = new Xls_Reader(System.getProperty("user.dir")+"//src//com//qtpselenium//xls//B suite.xlsx");
 	suiteCXls = new Xls_Reader(System.getProperty("user.dir")+"//src//com//qtpselenium//xls//C suite.xlsx");
 	suiteXls = new Xls_Reader(System.getProperty("user.dir")+"//src//com//qtpselenium//xls//TestSuite.xlsx");

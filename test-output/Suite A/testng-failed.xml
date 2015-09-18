@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite A]">
+<suite name="Failed suite [Suite A]">
   <listeners>
     <listener class-name="com.qtpselenium.listener.TestsListenerAdapter"/>
   </listeners>
   <test name="Test A1(failed)">
     <classes>
-      <class name="com.qtpselenium.suiteA.TestCase_A2">
-        <methods>
-          <include name="checkSuiteSkip"/>
-          <include name="checkTestSkip"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.TestCase_A2 -->
       <class name="com.qtpselenium.suiteA.TestCase_A1">
         <methods>
           <include name="testCaseA1" invocation-numbers="1 2"/>
@@ -20,17 +14,16 @@
           <include name="checkTestSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.TestCase_A1 -->
-    </classes>
-  </test> <!-- Test A1(failed) -->
-  <test name="Test A2(failed)">
-    <classes>
       <class name="com.qtpselenium.suiteA.TestCase_A2">
         <methods>
-          <include name="testCaseA2" invocation-numbers="1"/>
           <include name="checkSuiteSkip"/>
           <include name="checkTestSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.TestCase_A2 -->
+    </classes>
+  </test> <!-- Test A1(failed) -->
+  <test name="Test A2(failed)">
+    <classes>
       <class name="com.qtpselenium.suiteA.TestCase_A1">
         <methods>
           <include name="reportTestResult"/>
@@ -38,6 +31,13 @@
           <include name="checkTestSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.TestCase_A1 -->
+      <class name="com.qtpselenium.suiteA.TestCase_A2">
+        <methods>
+          <include name="testCaseA2" invocation-numbers="1"/>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.TestCase_A2 -->
     </classes>
   </test> <!-- Test A2(failed) -->
 </suite> <!-- Failed suite [Suite A] -->
