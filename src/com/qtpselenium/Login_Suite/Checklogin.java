@@ -1,5 +1,10 @@
 package com.qtpselenium.Login_Suite;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
@@ -55,21 +60,34 @@ public class Checklogin extends TestSuiteBase
 		
 		
 		//Selenium Code
-		String expected_title = "XYZ";
-		String actual_title = "XYZ";
-		System.out.println("before");
-		try{
-		Assert.assertEquals(expected_title, actual_title);
-		}
-		catch(Throwable t)
+		
+		openBrowser();// so that this function would call the browser as passed in the config properties
+		driver.get(config.getProperty("testSiteName"));
+		driver.manage().window().maximize();
+		driver.findElement(By.id(OR.getProperty("doctorID"))).sendKeys(col1); 
+		driver.findElement(By.id(OR.getProperty("password"))).sendKeys(col2);
+		driver.findElement(By.xpath(OR.getProperty("Submitbutton"))).click();
+		
+		//check the landing page is office visit or not
+		if(!compare_URL("https://specsav.ecwlab.com/mobiledoc/jsp/visionemr/jellybean/officevisit/officeVisits.jsp"))
 		{
-			//code to report error in testNG
-			ErrorUtil.addVerificationFailure(t);
 			fail=true;
-			return;
-			//report error in xlsx file
+			//return; if you want to stop exceution here
 		}
-		System.out.println("After*****");
+		
+		
+		driver.findElements(By.xpath(OR.getProperty("left_hand_icon"))).size();
+		WebElement left_nav = driver.findElement(By.id(OR.getProperty("Navigation")));
+		int num_of_list = left_nav.findElements(By.tagName(OR.getProperty("tag_name"))).size();
+		
+		if(!compare_left_nav_elements(8, num_of_list))
+		{
+			fail=true;
+			//return; if you want to stop exceution here
+		}
+		
+		System.out.println("Total menu items are " + num_of_list);
+		closeBrowser();
 	
 		
 	}

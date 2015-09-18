@@ -18,8 +18,8 @@ public class TestSuiteBase extends TestBase {
 		APP_LOGS.debug("Checking Run mode of Login Suite");
 		if(!TestUtil.isSuiteRunnable(suiteXls, "Login Suite"))
 		{
-			APP_LOGS.debug("Skipped because run mode A suite was set to NO");
-			throw new SkipException("Runmode of Suite A set to no. So Skipping al test in Suite A");
+			APP_LOGS.debug("Skipped because run mode Login Suite suite was set to NO");
+			throw new SkipException("Runmode of Login Suite set to no. So Skipping al test in Suite A");
 		
 		}
 

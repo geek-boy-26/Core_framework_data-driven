@@ -67,5 +67,6 @@
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/SpecSavers_Core_framework/Jars/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/SpecSavers_Core_framework/Jars/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/Selenium/SpecSavers_Core_framework/Jars/xslt.jar"/>
+	<classpathentry kind="lib" path="D:/Aakar/Selenium/SpecSavers_Core_framework/Jars/saxon8-dom.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
