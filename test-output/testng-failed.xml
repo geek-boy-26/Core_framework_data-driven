@@ -6,22 +6,31 @@
   </listeners>
   <test name="Checklogin(failed)">
     <classes>
+      <class name="com.qtpselenium.Login_Suite.Checklogin">
+        <methods>
+          <include name="reporterDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+          <include name="CheckLogin" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
       <class name="com.qtpselenium.Login_Suite.TestCase_A2">
         <methods>
           <include name="checkTestSkip"/>
           <include name="checkSuiteSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.Login_Suite.TestCase_A2 -->
-      <class name="com.qtpselenium.Login_Suite.Checklogin">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="CheckLogin"/>
-        </methods>
-      </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
     </classes>
   </test> <!-- Checklogin(failed) -->
   <test name="Test A2(failed)">
     <classes>
+      <class name="com.qtpselenium.Login_Suite.Checklogin">
+        <methods>
+          <include name="reporterDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
       <class name="com.qtpselenium.Login_Suite.TestCase_A2">
         <methods>
           <include name="testCaseA2"/>
@@ -29,11 +38,6 @@
           <include name="checkSuiteSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.Login_Suite.TestCase_A2 -->
-      <class name="com.qtpselenium.Login_Suite.Checklogin">
-        <methods>
-          <include name="checkTestSkip"/>
-        </methods>
-      </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
     </classes>
   </test> <!-- Test A2(failed) -->
 </suite> <!-- Failed suite [Login Suite] -->
