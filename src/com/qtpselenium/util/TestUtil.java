@@ -46,10 +46,11 @@ public class TestUtil
 						isExecutable= false;
 					}
 				}
+		
 			}
 			
 			return isExecutable;
-			
+		
 		}
 
 		
@@ -67,7 +68,7 @@ public class TestUtil
 			
 			int rows= xls.getRowCount(testCasename);
 			int cols= xls.getColumnCount(testCasename);
-			System.out.println("Rows are "+ rows + "cols are "+ cols);
+			//System.out.println("Rows are "+ rows + "cols are "+ cols);
 			
 			//add the data into objetc array
 					Object[][] data = new Object[rows-1][cols-3]; 

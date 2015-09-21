@@ -1,13 +1,21 @@
-18/09/2015 11:16:01 devpinoyLogger Loading property files
-18/09/2015 11:16:01 devpinoyLogger Loader property file succesfully
-18/09/2015 11:16:01 devpinoyLogger Loading Xls files
-18/09/2015 11:16:02 devpinoyLogger Loaded Xls files
-18/09/2015 11:16:02 devpinoyLogger Checking Run mode of Login Suite
-18/09/2015 11:16:02 devpinoyLogger Executing Checklogin
-18/09/2015 11:16:02 devpinoyLogger sam--password$1
-18/09/2015 11:17:46 devpinoyLogger Titles do not match
-18/09/2015 11:17:47 devpinoyLogger Skipping testcase as testTestCase_A2 case runmode set to no in test case
-18/09/2015 11:17:47 devpinoyLogger Checking Run mode of Suite B
-18/09/2015 11:17:47 devpinoyLogger Skipped because run mode was set to NO
-18/09/2015 11:17:47 devpinoyLogger Checking Run mode of Suite C
-18/09/2015 11:17:47 devpinoyLogger Skipped because run mode was set to NO
+21/09/2015 10:39:59 devpinoyLogger Loading property files
+21/09/2015 10:39:59 devpinoyLogger Loader property file succesfully
+21/09/2015 10:39:59 devpinoyLogger Loading Xls files
+21/09/2015 10:39:59 devpinoyLogger Loaded Xls files
+21/09/2015 10:39:59 devpinoyLogger Checking Run mode of Login Suite
+21/09/2015 10:40:00 devpinoyLogger Executing Checklogin
+21/09/2015 10:40:00 devpinoyLogger sam--password$1
+21/09/2015 10:41:10 devpinoyLogger Executing Checklogin
+21/09/2015 10:41:10 devpinoyLogger khan--khan
+21/09/2015 10:42:05 devpinoyLogger URL do not match
+21/09/2015 10:42:06 devpinoyLogger Executing Checklogin
+21/09/2015 10:42:06 devpinoyLogger password$1--sam
+21/09/2015 10:42:54 devpinoyLogger URL do not match
+21/09/2015 10:42:54 devpinoyLogger Executing Checklogin
+21/09/2015 10:42:54 devpinoyLogger khan--password$1
+21/09/2015 10:43:40 devpinoyLogger URL do not match
+21/09/2015 10:43:41 devpinoyLogger Skipping testcase as testNewCustomerRegistration case runmode set to no in test case
+21/09/2015 10:43:41 devpinoyLogger Checking Run mode of Suite B
+21/09/2015 10:43:41 devpinoyLogger Skipped because run mode was set to NO
+21/09/2015 10:43:41 devpinoyLogger Checking Run mode of Suite C
+21/09/2015 10:43:41 devpinoyLogger Skipped because run mode was set to NO

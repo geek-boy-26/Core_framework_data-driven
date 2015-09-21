@@ -1,4 +1,15 @@
 package com.qtpselenium.Login_Suite;
+/*
+This function is made to check and verfiy the user logged in into application. Add user name and password into excel sheet and run this script.
+All users would be verfiied whether they are able to login into application or not.
+
+
+
+
+
+*/
+
+import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -35,24 +46,26 @@ public class Checklogin extends TestSuiteBase
 			APP_LOGS.debug("Skipping testcase as test"+this.getClass().getSimpleName()+" case runmode set to no in test case"); //logs
 			throw new SkipException("Test Case skipped as runmode set to no Login");//reports
 		}
-		
-		
+				
 		//load runmodes off the test
 		runmodes= TestUtil.getDataSetRunmodes(LoginSuiteXls, this.getClass().getSimpleName());
 	}
 	
 	
 	@Test(dataProvider="getTestData")// class name is not same else it would consider contrructor 
-	public void CheckLogin(String col1,String col2) //Arguments should be same as number of columns
+	public void CheckLogin(String col1,String col2) throws InterruptedException, IOException  //Arguments should be same as number of columns
 	{
 		
 		//test run mode of current data set
+		
 		count++;
 		if(!runmodes[count].equalsIgnoreCase("Y"))
 		{
 			skip=true;
-			throw new SkipException("Runmode for test set data set to NO"+count);
+			throw new SkipException("Runmode for test set data set to NO"+"--"  + count);
+		
 		}
+		System.out.println(count + "After");
 		
 		//test method would be called 4 times
 		APP_LOGS.debug("Executing Checklogin");
@@ -69,10 +82,12 @@ public class Checklogin extends TestSuiteBase
 		driver.findElement(By.xpath(OR.getProperty("Submitbutton"))).click();
 		
 		//check the landing page is office visit or not
-		if(!compare_URL("https://specsav.ecwlab.com/mobiledoc/jsp/visionemr/jellybean/officevisit/officeVisits.jsp"))
+		if(!compare_URL(OR.getProperty("compare_url")))
 		{
 			fail=true;
 			//return; if you want to stop exceution here
+			// if the login is not valid it would close the browser
+			closeBrowser();
 		}
 		
 		
@@ -87,6 +102,7 @@ public class Checklogin extends TestSuiteBase
 		}
 		
 		System.out.println("Total menu items are " + num_of_list);
+		logout();
 		closeBrowser();
 	
 		
@@ -97,7 +113,10 @@ public class Checklogin extends TestSuiteBase
 	public void reporterDataSetResult()
 	{
 		if(skip)
+		{
 		TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "SKIP");
+		
+		}
 		else if(fail) {
 			isTestPass=false;
 			TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "FAIL");

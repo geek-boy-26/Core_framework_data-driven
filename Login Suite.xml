@@ -10,9 +10,9 @@
     </classes>
 </test>
 
-<test name="Test A2">
+<test name="NewCustomerRegistration">
     <classes>
-        <class name="com.qtpselenium.Login_Suite.TestCase_A2" ></class>  
+        <class name="com.qtpselenium.Login_Suite.NewCustomerRegistration" ></class>  
     </classes>
 </test>
 

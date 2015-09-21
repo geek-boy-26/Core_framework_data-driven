@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -27,6 +28,7 @@ public static Xls_Reader LoginSuiteXls=null;
 public static Xls_Reader suiteBXls=null;
 public static Xls_Reader suiteCXls=null;
 public static boolean isInitalized=false;
+public static boolean isBrowserOpened = false; //if exceute test in 1 browser
 public static 	WebDriver driver; 
 	//initializing the tests like logs, conifg, excel file..
 	public void initialize() throws IOException
@@ -62,6 +64,7 @@ public static 	WebDriver driver;
 	//selenium code
 	public void openBrowser()
 	{
+	
 		
 			if(config.getProperty("browserType").equals("Mozilla"))
 			{
@@ -77,7 +80,9 @@ public static 	WebDriver driver;
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//driver//chromedriver.exe");
 			
 			}
-
+		
+		
+		
 		}
 	
 	public void closeBrowser()
@@ -95,7 +100,7 @@ public static 	WebDriver driver;
 		catch(Throwable T)
 		{
 			ErrorUtil.addVerificationFailure(T);
-			APP_LOGS.debug("Titles do not match");
+			APP_LOGS.debug("URL do not match");
 			//fail=true;  //for reporting error we need to use the try and catch block with verification failure to report error in excel file
 			//return;  if you don't want to continue test ahead App_LOS.debug("Titles do not match")
 			return false;
@@ -139,6 +144,24 @@ public static 	WebDriver driver;
 		}
 		return true;
 	}
+	//just to do one time login into application this function can be used
+	public boolean login(String username, String password)
+	{
+		//selenium code for the specific user to login
+		driver.get(config.getProperty("testSiteName"));
+		driver.manage().window().maximize();
+		driver.findElement(By.id(OR.getProperty("doctorID"))).sendKeys(username); 
+		driver.findElement(By.id(OR.getProperty("password"))).sendKeys(password);
+		driver.findElement(By.xpath(OR.getProperty("Submitbutton"))).click();
+		
+		return true;
+	}
 	
-	
+	public boolean logout()
+	{
+		WebElement left_nav = driver.findElement(By.id(OR.getProperty("Navigation")));
+		left_nav.click();
+		driver.findElement(By.xpath(OR.getProperty("logout"))).click();
+		return true;
+	}
 }
