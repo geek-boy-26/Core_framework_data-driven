@@ -9,15 +9,15 @@
       <class name="com.qtpselenium.Login_Suite.NewCustomerRegistration">
         <methods>
           <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reporterDataSetResult"/>
           <include name="checkSuiteSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.Login_Suite.NewCustomerRegistration -->
       <class name="com.qtpselenium.Login_Suite.Checklogin">
         <methods>
-          <include name="reporterDataSetResult"/>
-          <include name="reportTestResult"/>
           <include name="checkTestSkip"/>
-          <include name="CheckLogin" invocation-numbers="1 2 3"/>
+          <include name="CheckLogin"/>
         </methods>
       </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
     </classes>

@@ -53,7 +53,7 @@ public class Checklogin extends TestSuiteBase
 	
 	
 	@Test(dataProvider="getTestData")// class name is not same else it would consider contrructor 
-	public void CheckLogin(String col1,String col2) throws InterruptedException, IOException  //Arguments should be same as number of columns
+	public void CheckLogin(String username,String password) throws InterruptedException, IOException  //Arguments should be same as number of columns
 	{
 		
 		//test run mode of current data set
@@ -65,11 +65,11 @@ public class Checklogin extends TestSuiteBase
 			throw new SkipException("Runmode for test set data set to NO"+"--"  + count);
 		
 		}
-		System.out.println(count + "After");
+		
 		
 		//test method would be called 4 times
 		APP_LOGS.debug("Executing Checklogin");
-		APP_LOGS.debug(col1+ "--"+col2 );
+		APP_LOGS.debug(username+ "--"+password );
 		
 		
 		//Selenium Code
@@ -77,8 +77,8 @@ public class Checklogin extends TestSuiteBase
 		openBrowser();// so that this function would call the browser as passed in the config properties
 		driver.get(config.getProperty("testSiteName"));
 		driver.manage().window().maximize();
-		driver.findElement(By.id(OR.getProperty("doctorID"))).sendKeys(col1); 
-		driver.findElement(By.id(OR.getProperty("password"))).sendKeys(col2);
+		driver.findElement(By.id(OR.getProperty("doctorID"))).sendKeys(username); 
+		driver.findElement(By.id(OR.getProperty("password"))).sendKeys(password);
 		driver.findElement(By.xpath(OR.getProperty("Submitbutton"))).click();
 		
 		//check the landing page is office visit or not

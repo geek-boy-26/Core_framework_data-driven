@@ -3,15 +3,23 @@ package com.qtpselenium.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.ini4j.Config;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.internal.Coordinates;
+import org.openqa.selenium.internal.Locatable;
 import org.testng.Assert;
 
 import com.qtpselenium.util.ErrorUtil;
@@ -29,7 +37,7 @@ public static Xls_Reader suiteBXls=null;
 public static Xls_Reader suiteCXls=null;
 public static boolean isInitalized=false;
 public static boolean isBrowserOpened = false; //if exceute test in 1 browser
-public static 	WebDriver driver; 
+public static WebDriver driver; 
 	//initializing the tests like logs, conifg, excel file..
 	public void initialize() throws IOException
 	{
@@ -80,8 +88,8 @@ public static 	WebDriver driver;
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//driver//chromedriver.exe");
 			
 			}
-		
-		
+		String wait_Time= config.getProperty("default_implicit");
+		driver.manage().timeouts().implicitlyWait(Long.valueOf(wait_Time), TimeUnit.SECONDS);
 		
 		}
 	
@@ -144,6 +152,7 @@ public static 	WebDriver driver;
 		}
 		return true;
 	}
+	
 	//just to do one time login into application this function can be used
 	public boolean login(String username, String password)
 	{
@@ -156,6 +165,83 @@ public static 	WebDriver driver;
 		
 		return true;
 	}
+	
+	public void customer_registration_button()
+	{
+		Actions action = new Actions(driver);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		WebElement links = driver.findElement(By.xpath(OR.getProperty("mouse_hover")));
+		action.moveToElement(links);
+		action.perform();
+		driver.findElement(By.xpath(OR.getProperty("NewCustomer"))).click();
+		APP_LOGS.debug("Executing NewCustomerRegistration");
+		
+		
+	}
+	
+	
+	
+	public void navigate_to_mandate_field_settings()
+	{
+		driver.findElement(By.xpath(OR.getProperty("left_hand_icon"))).click();
+		driver.findElement(By.xpath(OR.getProperty("setting_button"))).click();
+		APP_LOGS.debug("In settings congif screen");
+		driver.findElement(By.xpath(OR.getProperty("customer_config"))).click();;
+		driver.findElement(By.xpath(OR.getProperty("Register_mandat"))).click();
+		APP_LOGS.debug("In customer congif screen");
+	}
+	
+	//get table details from the setting page
+	public void get_settings_page_table_details()
+	{
+		
+		WebElement htmltable = driver.findElement(By.xpath(OR.getProperty("get_table_body")));
+	//	System.out.println(htmltable.findElement(By.tagName("tr")).getText());
+		
+		List<WebElement> rows = htmltable.findElements(By.tagName(OR.getProperty("get_rows")));
+		System.out.println(rows.size());
+	
+		for(int i=1;i<=rows.size();i++)
+		{
+			System.out.println(i);
+			System.out.println(driver.findElement(By.xpath("html/body/div[1]/div[3]/section/div[3]/div/section/div[1]/div[2]/form/div/div/div/div[1]/div/div/div[1]/div[2]/table/tbody/tr["+i+"]")).getText());
+			if(i==18)
+				setting_page_scroll();
+		}
+
+
+	}
+	
+	public void setting_page_scroll()
+	{
+		WebElement element = driver.findElement(By.id("checkbox72"));
+		Coordinates cor = ((Locatable)element).getCoordinates(); 
+		cor.onPage();
+		cor.inViewPort();
+		
+	}
+	
+	public void setting_page_scroll_up()
+	{
+		WebElement element = driver.findElement(By.id("checkbox1"));
+		Coordinates cor = ((Locatable)element).getCoordinates(); 
+		cor.onPage();
+		cor.inViewPort();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public boolean logout()
 	{

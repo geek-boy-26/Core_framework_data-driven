@@ -6,16 +6,16 @@
   </listeners>
   <test name="Test B1(failed)">
     <classes>
-      <class name="com.qtpselenium.suiteB.TestCase_B2">
-        <methods>
-          <include name="checkSuiteSkip"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteB.TestCase_B2 -->
       <class name="com.qtpselenium.suiteB.TestCase_B1">
         <methods>
           <include name="testCaseB1"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteB.TestCase_B1 -->
+      <class name="com.qtpselenium.suiteB.TestCase_B2">
+        <methods>
+          <include name="checkSuiteSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.TestCase_B2 -->
     </classes>
   </test> <!-- Test B1(failed) -->
   <test name="Test B2(failed)">

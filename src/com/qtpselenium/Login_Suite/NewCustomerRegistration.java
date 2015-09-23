@@ -1,12 +1,41 @@
 package com.qtpselenium.Login_Suite;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.ClickAction;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.internal.Coordinates;
+import org.openqa.selenium.internal.Locatable;
 
+import com.opera.core.systems.internal.input.KeyEvent;
 import com.qtpselenium.util.TestUtil;
 
 public class NewCustomerRegistration extends TestSuiteBase{
@@ -34,7 +63,14 @@ public class NewCustomerRegistration extends TestSuiteBase{
 		}
 
 	@Test(dataProvider="getTestData")
-	public void testCaseA2(String col1,String col2)
+	public void testCaseA2(
+			String title,
+			String Surname,
+			String Firstname,
+			String dateofbirth,
+			String Gender,
+			String prefereedphone
+			) throws InterruptedException, AWTException
 	{
 		//test run mode of current data set
 				count++;
@@ -45,14 +81,40 @@ public class NewCustomerRegistration extends TestSuiteBase{
 				}
 				
 				openBrowser();
-				login(col1,col2); 
-				logout();
-				closeBrowser();
+				login("sam", "password$1"); //keywords
 				
-		//test method would be called 4 times
-		APP_LOGS.debug("Executing NewCustomerRegistration");
-		APP_LOGS.debug(col1+ "--"+col2);
+				navigate_to_mandate_field_settings();//check mandatory fields in setting 
+			//	customer_registration_button(); //navigate to window of customer registration // not working need to check later 
+				get_settings_page_table_details(); // this would get the elements form the table  // 
+				
+		//*********************************************************get Checkbox******		
+				WebElement htmltable = driver.findElement(By.xpath(OR.getProperty("get_table_body")));
+				List<WebElement> rows = htmltable.findElements(By.tagName("td"));
+				System.out.println(rows.size()); //overall columns of the rest of the table //we want only column where check box exists
+				setting_page_scroll_up();
+				for(int i=1;i<rows.size();i++)
+				{
+						System.out.println(driver.findElements(By.id("checkbox"+i)));
+							List<WebElement> checkboxes = driver.findElements(By.id("checkbox"+i));
+							if(i==18)
+								setting_page_scroll();
+							for(int j=0; j<checkboxes.size();j++)
+							{
+								checkboxes.get(j).click();
+							}
+			
+			}
+		
+
+				
+	
+		
+	
+		//********************************************************		
+				
 	}
+
+	
 
 	@AfterMethod //each det set is exceuted
 	public void reporterDataSetResult()
@@ -89,5 +151,7 @@ public class NewCustomerRegistration extends TestSuiteBase{
 	{
 		return TestUtil.getData(LoginSuiteXls, this.getClass().getSimpleName());
 	}
+	
+
 
 }

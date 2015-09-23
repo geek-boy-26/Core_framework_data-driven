@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qtpselenium.Login_Suite.Checklogin">
+      <class name="com.qtpselenium.Login_Suite.NewCustomerRegistration">
         <methods>
-          <include name="reporterDataSetResult"/>
-          <include name="reportTestResult"/>
           <include name="checkTestSkip"/>
-          <include name="CheckLogin" invocation-numbers="1 2 3"/>
+          <include name="reportTestResult"/>
+          <include name="reporterDataSetResult"/>
           <include name="checkSuiteSkip"/>
+          <include name="testCaseA2" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
+      </class> <!-- com.qtpselenium.Login_Suite.NewCustomerRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
