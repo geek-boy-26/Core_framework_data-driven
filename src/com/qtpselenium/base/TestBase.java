@@ -84,8 +84,9 @@ public static WebDriver driver;
 			}
 		else if(config.getProperty("browserType").equals("Chrome"))
 			{
+			System.setProperty("user.dir", System.getProperty("user.dir")+"//driver//chromedriver.exe");
 			driver = new ChromeDriver();
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//driver//chromedriver.exe");
+			
 			
 			}
 		String wait_Time= config.getProperty("default_implicit");

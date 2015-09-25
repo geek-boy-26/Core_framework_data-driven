@@ -2,8 +2,12 @@ package com.qtpselenium.Login_Suite;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+
+
 
 
 
@@ -89,21 +93,99 @@ public class NewCustomerRegistration extends TestSuiteBase{
 				
 		//*********************************************************get Checkbox******		
 				WebElement htmltable = driver.findElement(By.xpath(OR.getProperty("get_table_body")));
-				List<WebElement> rows = htmltable.findElements(By.tagName("td"));
-				System.out.println(rows.size()); //overall columns of the rest of the table //we want only column where check box exists
+				List<WebElement> rows = htmltable.findElements(By.className("text-center"));
+				System.out.println(rows.size()+"Rows"); //overall columns of the rest of the table //we want only column where check box exists
 				setting_page_scroll_up();
-				for(int i=1;i<rows.size();i++)
+				for(int i=1;i<rows.size()+1;i++)
 				{
-						System.out.println(driver.findElements(By.id("checkbox"+i)));
-							List<WebElement> checkboxes = driver.findElements(By.id("checkbox"+i));
-							if(i==18)
+					List<WebElement> checkbox = driver.findElements(By.id("checkbox"+i));
+					System.out.println(checkbox.size()+"checkbox size"+":" +"I"+i);
+					for(int j=0;j<checkbox.size();j++ )
+					{
+						System.out.println(driver.findElement(By.id("checkbox"+i)));
+						if(driver.findElement(By.id("checkbox"+i)).isSelected())
+						{
+							if(i==48)
 								setting_page_scroll();
+							System.out.println("true"+i);
+							System.out.println(driver.findElement(By.xpath("html/body/div/div[3]/section/div[3]/div/section/div[1]/div[2]/form/div/div/div/div[1]/div/div/div[1]/div[2]/table/tbody/tr["+i+"]/td[4]")).getText()+"TR");
+							
+						}
+						/*WebElement temp = driver.findElement(By.id("checkbox"+i));
+						ArrayList<String> Element = new ArrayList<String>();
+						Element.addAll(driver.findElement(By.id("checkbox"+i))*/
+					}
+			//	System.out.println(driver.findElements(By.id("checkbox"+i)));
+				/*WebElement temp = driver.findElement(By.tagName("label"));
+				if(temp != null)
+				{
+			
+					System.out.println("True");
+				}
+				else
+				{
+					System.out.println("false");
+				}
+			*/		
+				//System.out.println(driver.findElement(By.tagName("label")));
+					//System.out.println(driver.findElement(By.id("checkbox"+i)));
+				
+/**/					
+				/*	else if(driver.findElement(By.id("checkbox"+i)).isEnabled())
+					{
+						System.out.println("Not displayed");
+					}*/
+					
+			/*		if(driver.findElement(By.id("checkbox"+i)).isDisplayed())
+					{
+						if(driver.findElement(By.id("checkbox"+i)).isSelected())
+						{
+							System.out.println("Checked");
+							//System.out.println(driver.findElement(By.tagName("label")));
+						}
+						if(!driver.findElement(By.id("checkbox"+i)).isSelected())
+						{
+							System.out.println("UnChecked");
+							//System.out.println(driver.findElement(By.tagName("label")));
+						}
+					}*/
+					
+				}
+				
+				/*for(int i=1;i<rows.size();i++)
+				{
+							System.out.println(driver.findElements(By.id("checkbox"+i)));
+							
+						List<WebElement> checkboxes = driver.findElements(By.id("checkbox"+i));
+						System.out.println(checkboxes.size());
+							if(i==18)
+							{
+								System.out.println("in lop");
+								setting_page_scroll();
+							}
+							
 							for(int j=0; j<checkboxes.size();j++)
 							{
-								checkboxes.get(j).click();
+								
+								if(checkboxes.get(j).isSelected())
+								{
+								int k=1;
+								System.out.println(driver.findElement(By.xpath("html/body/div[1]/div[3]/section/div[3]/div/section/div[1]/div[2]/form/div/div/div/div[1]/div/div/div[1]/div[2]/table/tbody/tr["+k+"]/td[1]")).getText()+"checkboxes which are selected");
+								k++;
+							
+								System.out.println( "checked"+j);
+								}
+								else if(!checkboxes.get(j).isSelected())
+								{
+									System.out.println( "unchecked"+j);
+									//System.out.println(driver.findElement(By.tagName("tr"+j)).getText()+"checkboxes which are NOT selected");
+									//checkboxes.get(j).click();
+								}
+								
 							}
+							
 			
-			}
+			}*/
 		
 
 				

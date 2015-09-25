@@ -1,12 +1,8 @@
-23/09/2015 10:47:14 devpinoyLogger Loading property files
-23/09/2015 10:47:14 devpinoyLogger Loader property file succesfully
-23/09/2015 10:47:14 devpinoyLogger Loading Xls files
-23/09/2015 10:47:15 devpinoyLogger Loaded Xls files
-23/09/2015 10:47:15 devpinoyLogger Checking Run mode of Login Suite
-23/09/2015 10:47:15 devpinoyLogger Skipping testcase as testChecklogin case runmode set to no in test case
-23/09/2015 10:47:54 devpinoyLogger In settings congif screen
-23/09/2015 10:47:56 devpinoyLogger In customer congif screen
-23/09/2015 10:48:01 devpinoyLogger Checking Run mode of Suite B
-23/09/2015 10:48:01 devpinoyLogger Skipped because run mode was set to NO
-23/09/2015 10:48:01 devpinoyLogger Checking Run mode of Suite C
-23/09/2015 10:48:01 devpinoyLogger Skipped because run mode was set to NO
+24/09/2015 11:28:47 devpinoyLogger Loading property files
+24/09/2015 11:28:47 devpinoyLogger Loader property file succesfully
+24/09/2015 11:28:47 devpinoyLogger Loading Xls files
+24/09/2015 11:28:48 devpinoyLogger Loaded Xls files
+24/09/2015 11:28:48 devpinoyLogger Checking Run mode of Login Suite
+24/09/2015 11:28:48 devpinoyLogger Skipping testcase as testChecklogin case runmode set to no in test case
+24/09/2015 11:29:21 devpinoyLogger In settings congif screen
+24/09/2015 11:29:23 devpinoyLogger In customer congif screen
