@@ -35,7 +35,7 @@
           <include name="reportTestResult"/>
           <include name="reporterDataSetResult"/>
           <include name="checkSuiteSkip"/>
-          <include name="testCaseA2" invocation-numbers="0"/>
+          <include name="testCaseA2" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.qtpselenium.Login_Suite.NewCustomerRegistration -->
     </classes>

@@ -1,0 +1,99 @@
+	//********To Select Title******///
+				if(title.equalsIgnoreCase("Mr."))
+				{
+					driver.findElement(By.xpath(".//*[@id='titleDiv']/button[1]")).click();
+				}
+				else	if(title.equalsIgnoreCase("Mrs."))
+				{
+					driver.findElement(By.xpath(".//*[@id='titleDiv']/button[2]")).click();
+				}
+				else if(title.equalsIgnoreCase("Miss."))
+				{
+					driver.findElement(By.xpath(".//*[@id='titleDiv']/button[3]")).click();
+				}
+				else if(title.equalsIgnoreCase("Sir"))
+				{
+					driver.findElement(By.xpath(".//*[@id='titleDiv']/button[4]")).click();
+				}
+				else if(title.equalsIgnoreCase("Dr."))
+				{
+					driver.findElement(By.xpath(".//*[@id='titleDiv']/button[5]")).click();
+				}
+				else if(title.equalsIgnoreCase("Ms."))
+				{
+					driver.findElement(By.xpath(".//*[@id='titleDiv']/button[6]")).click();
+				}
+				
+				
+				
+				//********To enter field values ******///
+				
+				driver.findElement(By.xpath(".//*[@id='txtSurname']")).sendKeys(Surname);
+				driver.findElement(By.xpath(".//*[@id='txtfname']")).sendKeys(Firstname);
+				driver.findElement(By.xpath(".//*[@id='txtdob']")).sendKeys(dateofbirth);
+				driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/div[2]/button[2]")).click();
+				
+				
+				
+				//********To enter field Gender******///
+				if(Gender.equalsIgnoreCase("M"))
+				{
+					driver.findElement(By.xpath("(//button[@type='button'])[45]")).click();
+				}
+				if(Gender.equalsIgnoreCase("F"))
+				{
+					driver.findElement(By.xpath("(//button[@type='button'])[46]")).click();
+				}
+				
+				//********To enter field values Title******///
+				driver.findElement(By.xpath(".//*[@id='txtPhone']")).click();
+				driver.findElement(By.xpath(".//*[@id='txtPhone']")).sendKeys(prefereedphone);
+				//click ok
+				driver.findElement(By.xpath("//div[@id='customerRegContent']/div[3]/button")).click();
+					
+				//script failing check it tomorrow by debbuging and get the label detials 
+				
+			Thread.sleep(5000);
+			capturescreenshot("alertbox");
+			Alert alert = driver.switchTo().alert();
+			String AlertText = alert.getText();
+			Assert.assertEquals(AlertText, "Customer already exist with same Surname,Firstname and Date Of Birth");
+			alert.accept();
+			
+			
+//Login************************
+driver.findElements(By.xpath(OR.getProperty("left_hand_icon"))).size();
+		WebElement left_nav = driver.findElement(By.id(OR.getProperty("Navigation")));
+		int num_of_list = left_nav.findElements(By.tagName(OR.getProperty("tag_name"))).size();
+		
+		Thread.sleep(2000);
+		if(!compare_left_nav_elements(8, num_of_list))
+		{
+			fail=true;
+			//return; if you want to stop exceution here
+		}
+		
+		System.out.println("Total menu items are " + num_of_list);
+		
+		
+			//check the landing page is office visit or not
+		/*if(compare_URL(OR.getProperty("compare_url")))
+		{
+			fail=true;
+			//return; if you want to stop exceution here
+			// if the login is not valid it would close the browser
+			closeBrowser();
+		}*/			
+		
+		
+//******************************///**************************
+ if(driver.findElement(By.id("customerRegContent")).isDisplayed()==false)
+				 {
+					 
+					 Thread.sleep(3000);
+					 capturescreenshot("Customer Registration failed");
+					 Assert.assertFalse(driver.findElement(By.id("customerRegContent")).isDisplayed(), "Customer Form should be submitted");
+					 fail=true;
+					 return;
+				 }
+						

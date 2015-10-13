@@ -1,34 +1,30 @@
 package com.qtpselenium.Login_Suite;
 
 import java.awt.AWTException;
+import java.awt.Label;
 import java.awt.Robot;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import net.sourceforge.htmlunit.corejs.javascript.ast.NewExpression;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.http.HttpConnection;
+import org.bouncycastle.asn1.ocsp.Request;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.ClickAction;
+import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -38,9 +34,15 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.internal.Coordinates;
 import org.openqa.selenium.internal.Locatable;
+import org.openqa.selenium.remote.HttpSessionId;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.opera.core.systems.internal.ImplicitWait;
 import com.opera.core.systems.internal.input.KeyEvent;
+import com.qtpselenium.util.ErrorUtil;
 import com.qtpselenium.util.TestUtil;
+import com.qtpselenium.util.Xls_Reader;
 
 public class NewCustomerRegistration extends TestSuiteBase{
 
@@ -48,7 +50,11 @@ public class NewCustomerRegistration extends TestSuiteBase{
 	static boolean pass = false;	
 	static boolean fail = false;
 	static boolean isTestPass = true;
-	
+	static boolean is_customer_registration_open;
+	static String Customer_Surname;
+	static Xls_Reader xls;
+public int sum=0;
+public Set<Cookie> cookie=null;
 	String runmodes[]=null;  //this is to check the run mode of data in test case with the values Y or N
 	static int count=-1;
 	
@@ -74,7 +80,7 @@ public class NewCustomerRegistration extends TestSuiteBase{
 			String dateofbirth,
 			String Gender,
 			String prefereedphone
-			) throws InterruptedException, AWTException
+			) throws InterruptedException, AWTException, IOException
 	{
 		//test run mode of current data set
 				count++;
@@ -85,119 +91,250 @@ public class NewCustomerRegistration extends TestSuiteBase{
 				}
 				
 				openBrowser();
-				login("sam", "password$1"); //keywords
 				
-				navigate_to_mandate_field_settings();//check mandatory fields in setting 
-			//	customer_registration_button(); //navigate to window of customer registration // not working need to check later 
-				get_settings_page_table_details(); // this would get the elements form the table  // 
+				if(cookie==null)
+				login("sam", "password$1");
+				cookie = driver.manage().getCookies();
+				System.out.println(cookie);
 				
-		//*********************************************************get Checkbox******		
-				WebElement htmltable = driver.findElement(By.xpath(OR.getProperty("get_table_body")));
-				List<WebElement> rows = htmltable.findElements(By.className("text-center"));
-				System.out.println(rows.size()+"Rows"); //overall columns of the rest of the table //we want only column where check box exists
-				setting_page_scroll_up();
-				for(int i=1;i<rows.size()+1;i++)
-				{
-					List<WebElement> checkbox = driver.findElements(By.id("checkbox"+i));
-					System.out.println(checkbox.size()+"checkbox size"+":" +"I"+i);
-					for(int j=0;j<checkbox.size();j++ )
-					{
-						System.out.println(driver.findElement(By.id("checkbox"+i)));
-						if(driver.findElement(By.id("checkbox"+i)).isSelected())
-						{
-							if(i==48)
-								setting_page_scroll();
-							System.out.println("true"+i);
-							System.out.println(driver.findElement(By.xpath("html/body/div/div[3]/section/div[3]/div/section/div[1]/div[2]/form/div/div/div/div[1]/div/div/div[1]/div[2]/table/tbody/tr["+i+"]/td[4]")).getText()+"TR");
-							
-						}
-						/*WebElement temp = driver.findElement(By.id("checkbox"+i));
-						ArrayList<String> Element = new ArrayList<String>();
-						Element.addAll(driver.findElement(By.id("checkbox"+i))*/
-					}
-			//	System.out.println(driver.findElements(By.id("checkbox"+i)));
-				/*WebElement temp = driver.findElement(By.tagName("label"));
-				if(temp != null)
+				
+				
+	//	compare_mandate_fields(); //This would get the matching fields of overall registration form
+				try
 				{
 			
-					System.out.println("True");
-				}
-				else
-				{
-					System.out.println("false");
-				}
-			*/		
-				//System.out.println(driver.findElement(By.tagName("label")));
-					//System.out.println(driver.findElement(By.id("checkbox"+i)));
+				Thread.sleep(5000);
+				driver.get("http://10.100.20.45:9090/mobiledoc/jsp/visionemr/jellybean/officevisit/officeVisits.jsp");
+				customer_registration_button();
+				Thread.sleep(3000);
 				
-/**/					
-				/*	else if(driver.findElement(By.id("checkbox"+i)).isEnabled())
-					{
-						System.out.println("Not displayed");
-					}*/
-					
-			/*		if(driver.findElement(By.id("checkbox"+i)).isDisplayed())
-					{
-						if(driver.findElement(By.id("checkbox"+i)).isSelected())
-						{
-							System.out.println("Checked");
-							//System.out.println(driver.findElement(By.tagName("label")));
-						}
-						if(!driver.findElement(By.id("checkbox"+i)).isSelected())
-						{
-							System.out.println("UnChecked");
-							//System.out.println(driver.findElement(By.tagName("label")));
-						}
-					}*/
-					
-				}
-				
-				/*for(int i=1;i<rows.size();i++)
+				Thread.sleep(5000);
+				combine_alert_submit();
+				if(title.equalsIgnoreCase("Mr."))
 				{
-							System.out.println(driver.findElements(By.id("checkbox"+i)));
-							
-						List<WebElement> checkboxes = driver.findElements(By.id("checkbox"+i));
-						System.out.println(checkboxes.size());
-							if(i==18)
-							{
-								System.out.println("in lop");
-								setting_page_scroll();
-							}
-							
-							for(int j=0; j<checkboxes.size();j++)
-							{
-								
-								if(checkboxes.get(j).isSelected())
-								{
-								int k=1;
-								System.out.println(driver.findElement(By.xpath("html/body/div[1]/div[3]/section/div[3]/div/section/div[1]/div[2]/form/div/div/div/div[1]/div/div/div[1]/div[2]/table/tbody/tr["+k+"]/td[1]")).getText()+"checkboxes which are selected");
-								k++;
-							
-								System.out.println( "checked"+j);
-								}
-								else if(!checkboxes.get(j).isSelected())
-								{
-									System.out.println( "unchecked"+j);
-									//System.out.println(driver.findElement(By.tagName("tr"+j)).getText()+"checkboxes which are NOT selected");
-									//checkboxes.get(j).click();
-								}
-								
-							}
-							
+					driver.findElement(By.xpath(OR.getProperty("Mr."))).click();
+				}
+				else	if(title.equalsIgnoreCase("Mrs."))
+				{
+					driver.findElement(By.xpath(OR.getProperty("Mrs."))).click();
+				}
+				else if(title.equalsIgnoreCase("Miss."))
+				{
+					driver.findElement(By.xpath(OR.getProperty("Miss."))).click();
+				}
+				else if(title.equalsIgnoreCase("Sir"))
+				{
+					driver.findElement(By.xpath(OR.getProperty("Sir"))).click();
+				}
+				else if(title.equalsIgnoreCase("Dr."))
+				{
+					driver.findElement(By.xpath(OR.getProperty("Dr."))).click();
+				}
+				else if(title.equalsIgnoreCase("Ms."))
+				{
+					driver.findElement(By.xpath(OR.getProperty("Ms."))).click();
+				}
+				APP_LOGS.debug("Title is Selected");
+				combine_alert_submit();
 			
-			}*/
-		
-
 				
-	
-		
-	
-		//********************************************************		
+				//********To enter field values ******///
+				
+				driver.findElement(By.xpath(OR.getProperty("Surname"))).sendKeys(Surname);
+				APP_LOGS.debug("Surname is added");
+				combine_alert_submit();
+				Thread.sleep(2000);
+				driver.findElement(By.xpath(OR.getProperty("Firstname"))).sendKeys(Firstname);
+				APP_LOGS.debug("FirstName is added");
+				combine_alert_submit();
+				//********enter an invalid date*******/////
+				/*JavascriptExecutor test =(JavascriptExecutor)driver;
+				test.executeScript("alert('Enter an invalid date');");
+				Thread.sleep(2000);
+				driver.switchTo().alert().accept();
+				driver.findElement(By.xpath(OR.getProperty("dob"))).click();
+				driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div[2]/button[1]")).click();
+				combine_alert_submit();	*/	
+				//****END***////
+				driver.findElement(By.xpath(OR.getProperty("dob"))).click();
+				driver.findElement(By.xpath(OR.getProperty("dob"))).clear();
+				driver.findElement(By.xpath(OR.getProperty("dob"))).sendKeys(dateofbirth);
+				APP_LOGS.debug("DateOfBirth is added");
+				combine_alert_submit();
+						
+				//********To enter field Gender******///
+				if(Gender.equalsIgnoreCase("M"))
+				{
+					driver.findElement(By.xpath(OR.getProperty("Male"))).click();
+				}
+				if(Gender.equalsIgnoreCase("F"))
+				{
+					driver.findElement(By.xpath(OR.getProperty("Female"))).click();
+				}
+				APP_LOGS.debug("Gender is Selected");
+				combine_alert_submit();
+				//********To enter field values Title******///
+				driver.findElement(By.xpath(".//*[@id='txtPhone']")).click();
+				driver.findElement(By.xpath(".//*[@id='txtPhone']")).sendKeys(prefereedphone);
+				APP_LOGS.debug("PhoneNumber is added");
+				combine_alert_submit();
+			
+				if(Flag==1)
+				{
+					String str = RandomStringUtils.randomAlphabetic(8);
+					driver.findElement(By.xpath(OR.getProperty("Surname"))).sendKeys(str);
+					Customer_Surname=driver.findElement(By.xpath(OR.getProperty("Surname"))).getAttribute("value");
+					System.out.println("Customer Surname is "+":"+Customer_Surname);
+					//System.out.println(Flag+":"+"Value of Flag");
+				}
+				if(driver.findElement(By.xpath(OR.getProperty("Click_Form_ok"))).isDisplayed())
+				 click(OR.getProperty("Click_Form_ok"));	
+				//Form Submitted
+				
+				
+				//check the customer in customer Search option
+				//check customer in search option
+				Thread.sleep(3000);
+				 driver.findElement(By.xpath("//div[@id='jellyBeanDiv']/div/div/a/i")).click();
+				 Thread.sleep(2000);
+				 driver.findElement(By.id("custLookup")).sendKeys(Customer_Surname);
+				 Thread.sleep(2500);
+				 capturescreenshot(Customer_Surname);
+			
+				 
+				}
+				catch(Throwable t)
+				{
+					ErrorUtil.addVerificationFailure(t);
+					System.out.println(t);
+					//here
+					xls.setCellData(this.getClass().getSimpleName(), "Error",count+2, t.toString());
+					Assert.fail();
+					fail=true;
+					return;
+				}
 				
 	}
 
 	
+	public void combine_alert_submit() throws InterruptedException, IOException
+	{
+		String comp = "Customer already exist";
+		String date = "Date Of Birth can not be greater than or equal to today's date.";
+		try
+		{
+		Assert.assertTrue(driver.findElement(By.xpath(OR.getProperty("Click_Form_ok"))).isDisplayed());
+		if(driver.findElement(By.xpath(OR.getProperty("Click_Form_ok"))).isDisplayed())
+		{
+			//System.out.println(driver.findElement(By.xpath(OR.getProperty("Click_Form_ok"))).isDisplayed()+"::"+"yes displayed");
+			//click ok
+			  click(OR.getProperty("Click_Form_ok"));
+					Thread.sleep(5000);
+				//	capturescreenshot("Alert"+camera);
+					//click X alert button
+					if(driver.findElement(By.className("bootbox-body")).isDisplayed()==true)
+					{
+						text =driver.findElement(By.className("bootbox-body")).getText();	
+						//System.out.println(driver.findElement(By.className("bootbox-body")).getText());
+						
+						if(text.startsWith(comp))
+						{
+							System.out.println("Customer Exits");
+							APP_LOGS.debug("Customer Exits");
+							Flag=1;
+						}
+						 if(text.equals(date))
+						{
+							System.out.println("Got Invalid Date");
+							APP_LOGS.debug("Inavlid Date");
+						}
+						click(OR.getProperty("Alert_X_button"));
+						Thread.sleep(5000);
+						driver.switchTo().activeElement();
+					}
+										else if(driver.findElement(By.className("bootbox-body")).isDisplayed()==false)
+					{
+						System.out.println("Not Displayed");
+					}
+				
+			
+			
+		}
+		else
+		{
+			System.out.println("here");
+		}
+		}
+		catch(Throwable t)
+		{
+			ErrorUtil.addVerificationFailure(t);
+			APP_LOGS.debug("Element not found");
+			fail=true;
+			return;
+		}
+		  	
+				
+	}
+	
+	
+	
+	
+	
+	
+public void count_mandate_fields() throws InterruptedException
+{
+	Thread.sleep(8000);
+	WebElement ele = driver.findElement(By.id(OR.getProperty("Customer_Registration_form"))); // gives all the elements of the form 
+	List<WebElement> temp = ele.findElements(By.tagName(OR.getProperty("Registration_form_tag")));
 
+	Iterator<WebElement> i = temp.iterator();
+	while(i.hasNext())
+	{
+		WebElement dum = i.next();
+		//System.out.println(dum.getText());
+		String str = dum.getText().toString();
+//			System.out.println(str);	
+		
+		if(str.contains("*"))
+		{
+			
+			//System.out.println("true");
+			//System.out.println(dum.getText().toString());
+			String str_man = dum.getText().toString();
+			System.out.println(str_man);
+			
+			sum=sum+1;
+			
+		}
+		
+		
+	}
+		System.out.println(sum+":"+"in customer registration form");
+}
+//This function would compare the registration mandate fields along with the back end settings mandate fields
+public void compare_mandate_fields() throws InterruptedException, IOException
+{
+	customer_registration_button();
+	Thread.sleep(3000);
+	//***********Get the mandate fields from the customer registration form********////
+	count_mandate_fields();
+//	capturescreenshot("Customer Registration Mandate Fields"+camera+2);
+	//***********End	********////
+	//close the form
+	driver.findElement(By.xpath(OR.getProperty("X_Button"))).click();
+	
+	navigate_to_mandate_field_settings();//check mandatory fields in setting 
+//	capturescreenshot("Customer Settings Mandate Fields"+camera+1);
+	Thread.sleep(5000);
+	pre_registration_column_checkbox_checked();
+//	get_checkbox_checked();
+	if(sum==checkbox)
+	{
+		System.out.println("Fields are matching");
+		}
+	
+	
+}
 	@AfterMethod //each det set is exceuted
 	public void reporterDataSetResult()
 	{
@@ -221,9 +358,16 @@ public class NewCustomerRegistration extends TestSuiteBase{
 	public void reportTestResult()
 	{
 		if (isTestPass)
+		{
 			TestUtil.reportDataSetResults(LoginSuiteXls, "Test Cases", TestUtil.getRowNum(LoginSuiteXls, this.getClass().getSimpleName()), "PASS");
-		else
+			
+		}
+		
+			else
+			{
 			TestUtil.reportDataSetResults(LoginSuiteXls, "Test Cases", TestUtil.getRowNum(LoginSuiteXls, this.getClass().getSimpleName()), "FAIL");
+	//		TestUtil.reportDataSetResults(LoginSuiteXls, "Test Cases", TestUtil.getRowNum(LoginSuiteXls, this.getClass().getSimpleName()), "PASS");
+			}
 		
 	}
 	

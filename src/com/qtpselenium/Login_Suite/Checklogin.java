@@ -75,35 +75,8 @@ public class Checklogin extends TestSuiteBase
 		//Selenium Code
 		
 		openBrowser();// so that this function would call the browser as passed in the config properties
-		driver.get(config.getProperty("testSiteName"));
-		driver.manage().window().maximize();
-		driver.findElement(By.id(OR.getProperty("doctorID"))).sendKeys(username); 
-		driver.findElement(By.id(OR.getProperty("password"))).sendKeys(password);
-		driver.findElement(By.xpath(OR.getProperty("Submitbutton"))).click();
-		
-		//check the landing page is office visit or not
-		if(!compare_URL(OR.getProperty("compare_url")))
-		{
-			fail=true;
-			//return; if you want to stop exceution here
-			// if the login is not valid it would close the browser
-			closeBrowser();
-		}
-		
-		
-		driver.findElements(By.xpath(OR.getProperty("left_hand_icon"))).size();
-		WebElement left_nav = driver.findElement(By.id(OR.getProperty("Navigation")));
-		int num_of_list = left_nav.findElements(By.tagName(OR.getProperty("tag_name"))).size();
-		
-		if(!compare_left_nav_elements(8, num_of_list))
-		{
-			fail=true;
-			//return; if you want to stop exceution here
-		}
-		
-		System.out.println("Total menu items are " + num_of_list);
+		login(username, password);
 		logout();
-		closeBrowser();
 	
 		
 	}
@@ -113,19 +86,17 @@ public class Checklogin extends TestSuiteBase
 	public void reporterDataSetResult()
 	{
 		if(skip)
-		{
-		TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "SKIP");
-		
-		}
-		else if(fail) {
-			isTestPass=false;
-			TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "FAIL");
-			
-		}
-			else
-			TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "PASS");
-		skip=false;
-		fail=false;
+			TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "SKIP");
+			else if(fail) {
+				isTestPass=false;
+				TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "FAIL");
+				
+			}
+				else
+				TestUtil.reportDataSetResults(LoginSuiteXls, this.getClass().getSimpleName(), count+2, "PASS");
+			skip=false;
+			fail=false;
+
 	}
 	
 	
@@ -136,7 +107,7 @@ public class Checklogin extends TestSuiteBase
 			TestUtil.reportDataSetResults(LoginSuiteXls, "Test Cases", TestUtil.getRowNum(LoginSuiteXls, this.getClass().getSimpleName()), "PASS");
 		else
 			TestUtil.reportDataSetResults(LoginSuiteXls, "Test Cases", TestUtil.getRowNum(LoginSuiteXls, this.getClass().getSimpleName()), "FAIL");
-		
+			
 	}
 	
 	@DataProvider

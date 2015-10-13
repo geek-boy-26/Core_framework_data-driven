@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="14" failed="1" total="15" passed="0">
+<testng-results skipped="14" failed="0" total="15" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite B" duration-ms="16" started-at="2015-09-24T15:27:59Z" finished-at="2015-09-24T15:27:59Z">
+  <suite name="Suite B" duration-ms="20" started-at="2015-10-13T08:01:50Z" finished-at="2015-10-13T08:01:50Z">
     <groups>
     </groups>
-    <test name="Test B1" duration-ms="5" started-at="2015-09-24T15:27:59Z" finished-at="2015-09-24T15:27:59Z">
+    <test name="Test B1" duration-ms="5" started-at="2015-10-13T08:01:50Z" finished-at="2015-10-13T08:01:50Z">
       <class name="com.qtpselenium.suiteB.TestCase_B1">
-        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@6ec5b763]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@18e99f0]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@6ec5b763]" name="testCaseB1" duration-ms="0" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@18e99f0]" name="testCaseB1" duration-ms="0" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseB1 -->
-        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@6ec5b763]" name="testCaseB1" duration-ms="1" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@18e99f0]" name="testCaseB1" duration-ms="1" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseB1 -->
-        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@6ec5b763]" name="testCaseB1" duration-ms="0" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@18e99f0]" name="testCaseB1" duration-ms="0" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseB1 -->
-        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@6ec5b763]" name="testCaseB1" duration-ms="1" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseB1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.TestCase_B1@18e99f0]" name="testCaseB1" duration-ms="0" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -117,9 +117,9 @@
         </test-method> <!-- testCaseB1 -->
       </class> <!-- com.qtpselenium.suiteB.TestCase_B1 -->
     </test> <!-- Test B1 -->
-    <test name="Test B2" duration-ms="2" started-at="2015-09-24T15:27:59Z" finished-at="2015-09-24T15:27:59Z">
+    <test name="Test B2" duration-ms="2" started-at="2015-10-13T08:01:50Z" finished-at="2015-10-13T08:01:50Z">
       <class name="com.qtpselenium.suiteB.TestCase_B2">
-        <test-method status="SKIP" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@6aa27760]" name="checkSuiteSkip" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@56741e88]" name="checkSuiteSkip" is-config="true" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Runmode of Suite C set to no. So Skipping al test in Suite B]]>
@@ -152,27 +152,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteSkip -->
-        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@6aa27760]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@56741e88]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="SKIP" signature="testCaseB2()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@6aa27760]" name="testCaseB2" duration-ms="0" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseB2()[pri:0, instance:com.qtpselenium.suiteB.TestCase_B2@56741e88]" name="testCaseB2" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseB2 -->
       </class> <!-- com.qtpselenium.suiteB.TestCase_B2 -->
     </test> <!-- Test B2 -->
   </suite> <!-- Suite B -->
-  <suite name="Suite C" duration-ms="11" started-at="2015-09-24T15:27:59Z" finished-at="2015-09-24T15:27:59Z">
+  <suite name="Suite C" duration-ms="20" started-at="2015-10-13T08:01:50Z" finished-at="2015-10-13T08:01:50Z">
     <groups>
     </groups>
-    <test name="Test C1" duration-ms="4" started-at="2015-09-24T15:27:59Z" finished-at="2015-09-24T15:27:59Z">
+    <test name="Test C1" duration-ms="5" started-at="2015-10-13T08:01:50Z" finished-at="2015-10-13T08:01:50Z">
       <class name="com.qtpselenium.suiteC.TestCase_C1">
-        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@14ff9e23]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@57d13a79]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@14ff9e23]" name="testCaseC1" duration-ms="1" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@57d13a79]" name="testCaseC1" duration-ms="0" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -198,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseC1 -->
-        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@14ff9e23]" name="testCaseC1" duration-ms="0" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@57d13a79]" name="testCaseC1" duration-ms="0" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -224,7 +224,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseC1 -->
-        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@14ff9e23]" name="testCaseC1" duration-ms="0" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@57d13a79]" name="testCaseC1" duration-ms="0" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -250,7 +250,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseC1 -->
-        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@14ff9e23]" name="testCaseC1" duration-ms="0" started-at="2015-09-24T11:27:59Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteC.TestCase_C1@57d13a79]" name="testCaseC1" duration-ms="0" started-at="2015-10-13T04:01:50Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -278,9 +278,9 @@
         </test-method> <!-- testCaseC1 -->
       </class> <!-- com.qtpselenium.suiteC.TestCase_C1 -->
     </test> <!-- Test C1 -->
-    <test name="Test C2" duration-ms="1" started-at="2015-09-24T15:27:59Z" finished-at="2015-09-24T15:27:59Z">
+    <test name="Test C2" duration-ms="2" started-at="2015-10-13T08:01:50Z" finished-at="2015-10-13T08:01:50Z">
       <class name="com.qtpselenium.suiteC.TestCase_C2">
-        <test-method status="SKIP" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@586b736f]" name="checkSuiteSkip" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@4800ef96]" name="checkSuiteSkip" is-config="true" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Runmode of Suite C set to no. So Skipping al test in Suite C]]>
@@ -313,23 +313,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteSkip -->
-        <test-method status="SKIP" signature="testCaseC2()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@586b736f]" name="testCaseC2" duration-ms="1" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseC2 -->
-        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@586b736f]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@4800ef96]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
+        <test-method status="SKIP" signature="testCaseC2()[pri:0, instance:com.qtpselenium.suiteC.TestCase_C2@4800ef96]" name="testCaseC2" duration-ms="0" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseC2 -->
       </class> <!-- com.qtpselenium.suiteC.TestCase_C2 -->
     </test> <!-- Test C2 -->
   </suite> <!-- Suite C -->
-  <suite name="Login Suite" duration-ms="59030" started-at="2015-09-24T15:27:00Z" finished-at="2015-09-24T15:27:59Z">
+  <suite name="Login Suite" duration-ms="125887" started-at="2015-10-13T07:59:44Z" finished-at="2015-10-13T08:01:50Z">
     <groups>
     </groups>
-    <test name="Checklogin" duration-ms="17" started-at="2015-09-24T15:27:00Z" finished-at="2015-09-24T15:27:00Z">
+    <test name="Checklogin" duration-ms="15" started-at="2015-10-13T07:59:44Z" finished-at="2015-10-13T07:59:44Z">
       <class name="com.qtpselenium.Login_Suite.Checklogin">
-        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:00Z" finished-at="2015-09-24T11:27:00Z">
+        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@4421972b]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2015-10-13T03:59:44Z" finished-at="2015-10-13T03:59:44Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Test Case skipped as runmode set to no Login]]>
@@ -366,7 +366,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="SKIP" signature="CheckLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="CheckLogin" duration-ms="1" started-at="2015-09-24T11:27:00Z" data-provider="getTestData" finished-at="2015-09-24T11:27:00Z">
+        <test-method status="SKIP" signature="CheckLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@4421972b]" name="CheckLogin" duration-ms="1" started-at="2015-10-13T03:59:44Z" data-provider="getTestData" finished-at="2015-10-13T03:59:44Z">
           <params>
             <param index="0">
               <value>
@@ -382,91 +382,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckLogin -->
-        <test-method status="SKIP" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="reporterDataSetResult" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:00Z" finished-at="2015-09-24T11:27:00Z">
+        <test-method status="SKIP" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@4421972b]" name="reporterDataSetResult" is-config="true" duration-ms="0" started-at="2015-10-13T03:59:44Z" finished-at="2015-10-13T03:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reporterDataSetResult -->
-        <test-method status="SKIP" signature="CheckLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="CheckLogin" duration-ms="0" started-at="2015-09-24T11:27:00Z" data-provider="getTestData" finished-at="2015-09-24T11:27:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[khan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[khan]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckLogin -->
-        <test-method status="SKIP" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="reporterDataSetResult" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:00Z" finished-at="2015-09-24T11:27:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reporterDataSetResult -->
-        <test-method status="SKIP" signature="CheckLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="CheckLogin" duration-ms="0" started-at="2015-09-24T11:27:00Z" data-provider="getTestData" finished-at="2015-09-24T11:27:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[password$1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sam]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckLogin -->
-        <test-method status="SKIP" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="reporterDataSetResult" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:00Z" finished-at="2015-09-24T11:27:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reporterDataSetResult -->
-        <test-method status="SKIP" signature="CheckLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="CheckLogin" duration-ms="0" started-at="2015-09-24T11:27:00Z" data-provider="getTestData" finished-at="2015-09-24T11:27:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[khan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password$1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckLogin -->
-        <test-method status="SKIP" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="reporterDataSetResult" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:00Z" finished-at="2015-09-24T11:27:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reporterDataSetResult -->
-        <test-method status="SKIP" signature="reportTestResult()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@76b23e72]" name="reportTestResult" is-config="true" duration-ms="0" started-at="2015-09-24T11:27:00Z" finished-at="2015-09-24T11:27:00Z">
+        <test-method status="SKIP" signature="reportTestResult()[pri:0, instance:com.qtpselenium.Login_Suite.Checklogin@4421972b]" name="reportTestResult" is-config="true" duration-ms="0" started-at="2015-10-13T03:59:44Z" finished-at="2015-10-13T03:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestResult -->
       </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
     </test> <!-- Checklogin -->
-    <test name="NewCustomerRegistration" duration-ms="58996" started-at="2015-09-24T15:27:00Z" finished-at="2015-09-24T15:27:59Z">
+    <test name="NewCustomerRegistration" duration-ms="125855" started-at="2015-10-13T07:59:44Z" finished-at="2015-10-13T08:01:50Z">
       <class name="com.qtpselenium.Login_Suite.NewCustomerRegistration">
-        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@3ffa1b16]" name="checkSuiteSkip" is-config="true" duration-ms="700" started-at="2015-09-24T11:26:59Z" finished-at="2015-09-24T11:27:00Z">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="checkSuiteSkip" is-config="true" duration-ms="671" started-at="2015-10-13T03:59:44Z" finished-at="2015-10-13T03:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteSkip -->
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@3ffa1b16]" name="checkTestSkip" is-config="true" duration-ms="1" started-at="2015-09-24T11:27:00Z" finished-at="2015-09-24T11:27:00Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="checkTestSkip" is-config="true" duration-ms="2" started-at="2015-10-13T03:59:44Z" finished-at="2015-10-13T03:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="FAIL" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@3ffa1b16]" name="testCaseA2" duration-ms="58715" started-at="2015-09-24T11:27:00Z" data-provider="getTestData" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="testCaseA2" duration-ms="0" started-at="2015-10-13T03:59:44Z" data-provider="getTestData" finished-at="2015-10-13T03:59:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MR]]>
+                <![CDATA[Mr.]]>
               </value>
             </param>
             <param index="1">
@@ -495,38 +435,13 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"tag name","selector":"tr1"}
-Command duration or timeout: 20.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'ATLANTISPC-274', ip: '10.210.16.28', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 8c958189-2d49-41c7-ab35-9d40eab4a9e8
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=35.0.1}]]]>
+              <![CDATA[Runmode for test set data set to NO0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"tag name","selector":"tr1"}
-Command duration or timeout: 20.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'ATLANTISPC-274', ip: '10.210.16.28', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 8c958189-2d49-41c7-ab35-9d40eab4a9e8
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=35.0.1}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ByTagName.findElement(By.java:330)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.qtpselenium.Login_Suite.NewCustomerRegistration.testCaseA2(NewCustomerRegistration.java:111)
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO0
+	at com.qtpselenium.Login_Suite.NewCustomerRegistration.testCaseA2(NewCustomerRegistration.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -552,31 +467,214 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"tag name","selector":"tr1"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'ATLANTISPC-274', ip: '10.210.16.28', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/aakarg/AppData/Local/Temp/anonymous635426918286429108webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/aakarg/AppData/Local/Temp/anonymous635426918286429108webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseA2 -->
-        <test-method status="PASS" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@3ffa1b16]" name="reporterDataSetResult" is-config="true" duration-ms="185" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="PASS" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="reporterDataSetResult" is-config="true" duration-ms="229" started-at="2015-10-13T03:59:44Z" finished-at="2015-10-13T03:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reporterDataSetResult -->
-        <test-method status="PASS" signature="reportTestResult()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@3ffa1b16]" name="reportTestResult" is-config="true" duration-ms="81" started-at="2015-09-24T11:27:59Z" finished-at="2015-09-24T11:27:59Z">
+        <test-method status="SKIP" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="testCaseA2" duration-ms="1" started-at="2015-10-13T03:59:44Z" data-provider="getTestData" finished-at="2015-10-13T03:59:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Miss.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nafeesa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[02/02/1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.87250364E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode for test set data set to NO1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO1
+	at com.qtpselenium.Login_Suite.NewCustomerRegistration.testCaseA2(NewCustomerRegistration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseA2 -->
+        <test-method status="PASS" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="reporterDataSetResult" is-config="true" duration-ms="79" started-at="2015-10-13T03:59:44Z" finished-at="2015-10-13T03:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reporterDataSetResult -->
+        <test-method status="SKIP" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="testCaseA2" duration-ms="0" started-at="2015-10-13T03:59:45Z" data-provider="getTestData" finished-at="2015-10-13T03:59:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Miss.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Khan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nafeesa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[02/02/1990]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.87250364E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode for test set data set to NO2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode for test set data set to NO2
+	at com.qtpselenium.Login_Suite.NewCustomerRegistration.testCaseA2(NewCustomerRegistration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1172)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseA2 -->
+        <test-method status="PASS" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="reporterDataSetResult" is-config="true" duration-ms="58" started-at="2015-10-13T03:59:45Z" finished-at="2015-10-13T03:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reporterDataSetResult -->
+        <test-method status="PASS" signature="testCaseA2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="testCaseA2" duration-ms="125361" started-at="2015-10-13T03:59:45Z" data-provider="getTestData" finished-at="2015-10-13T04:01:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sir]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pathan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Yusuf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10/08/2001]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.2365498705E10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseA2 -->
+        <test-method status="PASS" signature="reporterDataSetResult()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="reporterDataSetResult" is-config="true" duration-ms="56" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reporterDataSetResult -->
+        <test-method status="PASS" signature="reportTestResult()[pri:0, instance:com.qtpselenium.Login_Suite.NewCustomerRegistration@4103bc02]" name="reportTestResult" is-config="true" duration-ms="57" started-at="2015-10-13T04:01:50Z" finished-at="2015-10-13T04:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTestResult -->
       </class> <!-- com.qtpselenium.Login_Suite.NewCustomerRegistration -->
     </test> <!-- NewCustomerRegistration -->
   </suite> <!-- Login Suite -->
-  <suite name="My Suite" duration-ms="0" started-at="2015-09-24T15:27:59Z" finished-at="2015-09-24T15:27:59Z">
+  <suite name="My Suite" duration-ms="0" started-at="2015-10-13T08:01:51Z" finished-at="2015-10-13T08:01:51Z">
     <groups>
     </groups>
   </suite> <!-- My Suite -->
