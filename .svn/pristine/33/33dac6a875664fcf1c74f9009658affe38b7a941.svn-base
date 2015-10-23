@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Login Suite]">
+  <listeners>
+    <listener class-name="com.qtpselenium.listener.TestsListenerAdapter"/>
+  </listeners>
+  <test name="Checklogin(failed)">
+    <classes>
+      <class name="com.qtpselenium.Login_Suite.NewCustomerRegistration">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reporterDataSetResult"/>
+          <include name="checkSuiteSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.Login_Suite.NewCustomerRegistration -->
+      <class name="com.qtpselenium.Login_Suite.Checklogin">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="CheckLogin"/>
+        </methods>
+      </class> <!-- com.qtpselenium.Login_Suite.Checklogin -->
+    </classes>
+  </test> <!-- Checklogin(failed) -->
+</suite> <!-- Failed suite [Login Suite] -->

@@ -23,7 +23,7 @@ public class SendMail
     {
     	Zip.zipDir(System.getProperty("user.dir")+"\\XSLT_Reports",System.getProperty("user.dir")+"\\email_xlst_reports.rar" );
     	
-                String[] to={"Sachin.mahajan@eclinicalworks.com"};
+                String[] to={"aakar.gupte@eclinicalworks.com"};
 
                 String[] cc={};
                 String[] bcc={};
@@ -143,7 +143,7 @@ public class SendMail
 
             // Put parts in message
             msg.setContent(multipart);
-            msg.setFrom(new InternetAddress("donotreply@gamil.com"));
+            msg.setFrom(new InternetAddress("donotreply@gmail.com"));
 
                         for(int i=0;i<to.length;i++){
 

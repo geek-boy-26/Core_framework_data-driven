@@ -191,7 +191,6 @@ public Set<Cookie> cookie=null;
 				 click(OR.getProperty("Click_Form_ok"));	
 				//Form Submitted
 				
-				
 				//check the customer in customer Search option
 				//check customer in search option
 				Thread.sleep(3000);

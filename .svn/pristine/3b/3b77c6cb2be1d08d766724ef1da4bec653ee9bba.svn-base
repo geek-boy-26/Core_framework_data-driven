@@ -1,0 +1,27 @@
+0000000000000000000000000000000000000000 5a685dc374b4f5ae327655bd8364062863efd285 aakarg <aakar.gupte@eclinicalworks.com> 1440763146 -0400	commit (initial): Basic framework
+5a685dc374b4f5ae327655bd8364062863efd285 9e66250f716ca9096439019fde8a989a01a9ea8a aakarg <aakar.gupte@eclinicalworks.com> 1440763518 -0400	commit (amend): Basic framework
+9e66250f716ca9096439019fde8a989a01a9ea8a fa0bf6f0245e0244ba8dbc85750d6a471643c279 aakarg <aakar.gupte@eclinicalworks.com> 1440763947 -0400	commit: test plan
+fa0bf6f0245e0244ba8dbc85750d6a471643c279 f3dbb181b1436139b94a5dfe02092e5bbf9da266 aakarg <aakar.gupte@eclinicalworks.com> 1441034038 -0400	commit: 
+f3dbb181b1436139b94a5dfe02092e5bbf9da266 c9b78ec789c6b7e5dd68a62baaece164dbbc7234 aakarg <aakar.gupte@eclinicalworks.com> 1441197922 -0400	commit: 
+c9b78ec789c6b7e5dd68a62baaece164dbbc7234 fca04bdaa5ac231fe7ece4944b653f149eeec05f aakarg <aakar.gupte@eclinicalworks.com> 1441198022 -0400	commit (amend): 
+fca04bdaa5ac231fe7ece4944b653f149eeec05f 74c7731f07244b1514ede9ff259c65e2a810eaba aakarg <aakar.gupte@eclinicalworks.com> 1441207049 -0400	commit (amend): 
+74c7731f07244b1514ede9ff259c65e2a810eaba c677b65cf849f4a131576d4a36d10261f6f0f0e4 aakarg <aakar.gupte@eclinicalworks.com> 1441272704 -0400	commit: 
+c677b65cf849f4a131576d4a36d10261f6f0f0e4 34cce38ba17bc50019542cd5d4d6a4d0d2599be8 aakarg <aakar.gupte@eclinicalworks.com> 1441272779 -0400	commit (amend): 
+34cce38ba17bc50019542cd5d4d6a4d0d2599be8 e7174e0401b3deb819819cab7f7060fccdae3210 aakarg <aakar.gupte@eclinicalworks.com> 1441273029 -0400	commit (amend): 
+e7174e0401b3deb819819cab7f7060fccdae3210 88e92661ec92bb9c539d32a48ec2f5c69981d498 aakarg <aakar.gupte@eclinicalworks.com> 1441273369 -0400	commit (amend): 
+88e92661ec92bb9c539d32a48ec2f5c69981d498 58a24d31f0abda094f01fa46baab90d6b7433a66 aakarg <aakar.gupte@eclinicalworks.com> 1441273446 -0400	commit (amend): 
+58a24d31f0abda094f01fa46baab90d6b7433a66 f3cc7397f6b8e4e277c68fd4f181586a8d318ef1 aakarg <aakar.gupte@eclinicalworks.com> 1441378487 -0400	commit (amend): Module 20 part 4 done.. part 5 need to do coding A,B,C XML files need to be coded
+f3cc7397f6b8e4e277c68fd4f181586a8d318ef1 f9c82ae81227d863cce4bea53488b555e3212439 aakarg <aakar.gupte@eclinicalworks.com> 1441378735 -0400	commit (amend): Module 20 part 4 done.. part 5 need to do coding A,B,C XML files need to be coded
+f9c82ae81227d863cce4bea53488b555e3212439 a5a0b998566103f855a268897dd851536a6b0b35 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1441699380 -0400	commit: testibgn
+a5a0b998566103f855a268897dd851536a6b0b35 74a91017df69a0262e93d3dd50ab427afefb207b aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1441723196 -0400	commit: Module 6 done
+74a91017df69a0262e93d3dd50ab427afefb207b 14bd12c4d934a3b7eacafd49d9ef722bedbd44c8 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1441797820 -0400	commit: Module 7 done
+14bd12c4d934a3b7eacafd49d9ef722bedbd44c8 2d2b346a6d658142a5ca99f566aec5c0809f2e46 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1442417369 -0400	commit: module 8 done
+2d2b346a6d658142a5ca99f566aec5c0809f2e46 3f2f65b517fe73a79850e09fe3fcf2dc0e2fc828 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1442494984 -0400	commit: Module 9 done
+3f2f65b517fe73a79850e09fe3fcf2dc0e2fc828 1386f7eceb7a2e2ea69bd24acaec639d7512dc07 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1442569732 -0400	commit: login cases
+1386f7eceb7a2e2ea69bd24acaec639d7512dc07 9359e0816217eb199bc231628bcf21248d1a2093 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1442570471 -0400	commit: login case updated
+9359e0816217eb199bc231628bcf21248d1a2093 08b77043fe0a8571871fae02fc91048abe3416c4 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1442589875 -0400	commit: Testcase login in progress
+08b77043fe0a8571871fae02fc91048abe3416c4 a4c9c49a0265e912ed801361703d8a1546dd06b0 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1442848898 -0400	commit: Login test Case done
+a4c9c49a0265e912ed801361703d8a1546dd06b0 9754bc9f23e67b3695998a7891e86ab1e7131c9a aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1443021524 -0400	commit: scroll down functionality done
+9754bc9f23e67b3695998a7891e86ab1e7131c9a 39cedd02737db6bbadd4e35c98ec8bbbfb13565f aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1443163616 -0400	commit: checkbox slection done
+39cedd02737db6bbadd4e35c98ec8bbbfb13565f 4bb763d7c12f24d3cc56132e0a35bfd805ad7335 aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1444724669 -0400	commit: Customer search done
+4bb763d7c12f24d3cc56132e0a35bfd805ad7335 afc0ea0ff41bfbe72f6843e20ed5fb8b84569b8f aakargupte <aakarg@ATLANTISPC-274.ecwatl.com> 1444905662 -0400	commit: Data added successfully

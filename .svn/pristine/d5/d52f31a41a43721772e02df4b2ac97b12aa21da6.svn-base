@@ -1,0 +1,4 @@
+testSiteName=http://10.100.20.45:9090/mobiledoc/jsp/visionemr/visionlogin.jsp
+browserType=Chrome
+OS=windows
+default_implicit=20

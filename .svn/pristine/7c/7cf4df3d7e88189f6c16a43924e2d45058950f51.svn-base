@@ -1,0 +1,50 @@
+14/10/2015 05:13:16 devpinoyLogger Loading property files
+14/10/2015 05:13:16 devpinoyLogger Loader property file succesfully
+14/10/2015 05:13:16 devpinoyLogger Loading Xls files
+14/10/2015 05:13:17 devpinoyLogger Loaded Xls files
+14/10/2015 05:13:17 devpinoyLogger Checking Run mode of Login Suite
+14/10/2015 05:13:17 devpinoyLogger Skipping testcase as testChecklogin case runmode set to no in test case
+14/10/2015 05:14:30 devpinoyLogger Executing NewCustomerRegistration
+14/10/2015 05:14:48 devpinoyLogger Title is Selected
+14/10/2015 05:14:58 devpinoyLogger Surname is added
+14/10/2015 05:15:11 devpinoyLogger FirstName is added
+14/10/2015 05:15:21 devpinoyLogger DateOfBirth is added
+14/10/2015 05:15:31 devpinoyLogger Gender is Selected
+14/10/2015 05:15:42 devpinoyLogger PhoneNumber is added
+14/10/2015 05:15:47 devpinoyLogger Customer Exits
+14/10/2015 05:16:09 devpinoyLogger Executing NewCustomerRegistration
+14/10/2015 05:16:28 devpinoyLogger Title is Selected
+14/10/2015 05:16:38 devpinoyLogger Surname is added
+14/10/2015 05:16:50 devpinoyLogger FirstName is added
+14/10/2015 05:17:01 devpinoyLogger DateOfBirth is added
+14/10/2015 05:17:11 devpinoyLogger Gender is Selected
+14/10/2015 05:17:21 devpinoyLogger PhoneNumber is added
+14/10/2015 05:17:26 devpinoyLogger Customer Exits
+14/10/2015 05:17:48 devpinoyLogger Executing NewCustomerRegistration
+14/10/2015 05:18:06 devpinoyLogger Title is Selected
+14/10/2015 05:18:16 devpinoyLogger Surname is added
+14/10/2015 05:18:29 devpinoyLogger FirstName is added
+14/10/2015 05:18:39 devpinoyLogger DateOfBirth is added
+14/10/2015 05:18:49 devpinoyLogger Gender is Selected
+14/10/2015 05:19:00 devpinoyLogger PhoneNumber is added
+14/10/2015 05:19:05 devpinoyLogger Customer Exits
+14/10/2015 05:19:26 devpinoyLogger Executing NewCustomerRegistration
+14/10/2015 05:19:45 devpinoyLogger Title is Selected
+14/10/2015 05:19:55 devpinoyLogger Surname is added
+14/10/2015 05:20:07 devpinoyLogger FirstName is added
+14/10/2015 05:20:18 devpinoyLogger DateOfBirth is added
+14/10/2015 05:20:28 devpinoyLogger Gender is Selected
+14/10/2015 05:20:38 devpinoyLogger PhoneNumber is added
+14/10/2015 05:20:43 devpinoyLogger Customer Exits
+14/10/2015 05:21:04 devpinoyLogger Executing NewCustomerRegistration
+14/10/2015 05:21:23 devpinoyLogger Title is Selected
+14/10/2015 05:21:33 devpinoyLogger Surname is added
+14/10/2015 05:21:45 devpinoyLogger FirstName is added
+14/10/2015 05:21:56 devpinoyLogger DateOfBirth is added
+14/10/2015 05:22:06 devpinoyLogger Gender is Selected
+14/10/2015 05:22:16 devpinoyLogger PhoneNumber is added
+14/10/2015 05:22:21 devpinoyLogger Customer Exits
+14/10/2015 05:22:35 devpinoyLogger Checking Run mode of Suite B
+14/10/2015 05:22:35 devpinoyLogger Skipped because run mode was set to NO
+14/10/2015 05:22:35 devpinoyLogger Checking Run mode of Suite C
+14/10/2015 05:22:35 devpinoyLogger Skipped because run mode was set to NO

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+<listeners>
+    <listener class-name="com.qtpselenium.listener.TestsListenerAdapter" />
+</listeners>
+
+<suite-files>
+<suite-file path="./Login Suite.xml"/>
+<suite-file path="./Suite_B.xml"/>
+<suite-file path="./Suite_C.xml"/>
+
+</suite-files>
+</suite>
